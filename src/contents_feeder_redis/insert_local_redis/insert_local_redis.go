@@ -41,6 +41,8 @@ func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character do
 					golog.Crit(err.Error())
 
 				}
+				
+				
 				create_at := characterold.Created_at
 
 				delta := time.Now().Sub(create_at)

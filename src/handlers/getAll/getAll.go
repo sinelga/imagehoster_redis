@@ -48,7 +48,7 @@ func GetAll(golog syslog.Writer, c redis.Conn, site string) []domains.CharacterR
 
 		args = append(args, site)
 
-		for i := 0; i < 10; i++ {
+		for i := 0; i < 15; i++ {
 
 			args = append(args, list[i].(string))
 
@@ -72,9 +72,13 @@ func GetAll(golog syslog.Writer, c redis.Conn, site string) []domains.CharacterR
 					if err := json.Unmarshal(v, &character); err != nil {
 						golog.Crit(err.Error())
 					} else {
-						
-						charactersRedis =append(charactersRedis,character)
-						
+
+						if character.Sex == "female" {
+
+							charactersRedis = append(charactersRedis, character)
+
+						}
+
 					}
 
 				}

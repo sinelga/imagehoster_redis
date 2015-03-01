@@ -85,7 +85,7 @@ func (characters *Characters) Find_age(golog syslog.Writer, db sql.DB) {
 
 	for i, _ := range characters.CharactersRedis {
 
-		sqlstr := "select age from characters where id=" + strconv.Itoa(characters.CharactersRedis[i].Id)
+		sqlstr := "select age,sex from characters where id=" + strconv.Itoa(characters.CharactersRedis[i].Id)
 
 		if rows, err := db.Query(sqlstr); err != nil {
 			golog.Crit(err.Error())
@@ -95,13 +95,15 @@ func (characters *Characters) Find_age(golog syslog.Writer, db sql.DB) {
 			for rows.Next() {
 
 				var age int
-				if err := rows.Scan(&age); err != nil {
+				var sex string
+				if err := rows.Scan(&age,&sex); err != nil {
 
 					golog.Err(err.Error())
 
 				} else {
 
 					characters.CharactersRedis[i].Age = age
+					characters.CharactersRedis[i].Sex = sex
 
 				}
 

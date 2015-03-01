@@ -15,10 +15,10 @@ type Pages struct {
 }
 
 type Page struct {
-	XMLName xml.Name `xml:"url"`
-	Loc     string   `xml:"loc"`
-	Lastmod string   `xml:"lastmod"`
-	Changefreq string `xml:"changefreq"`
+	XMLName    xml.Name `xml:"url"`
+	Loc        string   `xml:"loc"`
+	Lastmod    string   `xml:"lastmod"`
+	Changefreq string   `xml:"changefreq"`
 	//	Name       string   `xml:"news:news>news:publication>news:name"`
 	//	Language   string   `xml:"news:news>news:publication>news:language"`
 	//	Title      string   `xml:"news:news>news:title"`
@@ -68,22 +68,19 @@ type Character struct {
 	Img_updated_at   time.Time
 }
 
-
 type CharacterRedis struct {
-	Id               int
-	Name             string
-	Age              int
-	Moto             string
-	Description      string
-	City             string
+	Id            int
+	Name          string
+	Age           int
+	Sex           string
+	Moto          string
+	Description   string
+	City          string
 	Region        string
-	Phone            string
-	Created_at       time.Time
-	Img_file_name    string
-
+	Phone         string
+	Created_at    time.Time
+	Img_file_name string
 }
-
-
 
 type Paragraph struct {
 	Ptitle     string

@@ -27,7 +27,8 @@ func main() {
 
 	goji.Get("/api", handlers.MhandleAll)	
 	goji.Get("/api/:id", handlers.MhandleAll)	
-	goji.Get("/img/:id/:imgfile/:img/:mime/:width/:height", handlers.ImageShow)
+//	goji.Get("/img/:id/:imgfile/:img/:mime/:width/:height", handlers.ImageShow)
+	goji.Get("/img/:id/:imgfile/:width/:height", handlers.ImageShow)
 	goji.Get("/chat/:uuid/:phone/:ask",handlers.GetChatAnswer)
 //	goji.Get("/uploadapi", handlers.ShowAll)
 //	goji.Get("/fullimage/", http.FileServer(http.Dir("upload/img/")))

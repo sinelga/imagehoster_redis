@@ -11,6 +11,8 @@ import (
 	"net/http"
 	"startones"
 	"sync"
+//	"net/url"
+	"net"
 )
 
 var startOnce sync.Once
@@ -25,7 +27,14 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	})
 	
-	site := r.Host
+	site, _, _ := net.SplitHostPort(r.Host)
+			
+	if site == "localhost" {
+		
+		site="www.test.com"
+	}
+	
+	golog.Info("Site "+site)
 	
 	rds, err := redis.Dial("tcp", ":6379")
 	if err != nil {
@@ -35,8 +44,6 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 	}
 	defer rds.Close()
 
-	golog.Info("id " + c.URLParams["id"])
-	golog.Info(r.Method)
 	id := c.URLParams["id"]
 
 	var bytes []byte
@@ -44,7 +51,7 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	if id == "" {
 
-		characters := getAll.GetAll(golog, rds,site)
+		characters := getAll.GetAll(golog,rds,site)
 
 		bytes, e = json.Marshal(characters)
 		if e != nil {
@@ -55,7 +62,6 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	} else {
 
-		golog.Info("id " + id)
 
 		character := getOne.GetById(golog,rds,site, id)
 
