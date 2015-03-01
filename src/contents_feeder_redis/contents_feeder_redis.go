@@ -53,7 +53,7 @@ func main() {
 
 	var ch find_all_img.Characters
 	//
-	ch.Find_all_img("/home/juno/git/imagehoster/upload/img")
+	ch.Find_all_img("/home/juno/git/imagehoster_redis/upload/img")
 
 	ch.Add_name_phone_region(golog, names, phones, regions)
 
