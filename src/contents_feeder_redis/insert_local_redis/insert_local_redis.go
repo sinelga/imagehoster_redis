@@ -9,11 +9,13 @@ import (
 	"time"
 )
 
-func InsertCharacter(golog syslog.Writer, c redis.Conn, queuename string, character domains.CharacterRedis, deltahours int) {
+func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis, deltahours int) {
 
 	update_insert := false
+	
+	field := character.Id
 
-	if exist, err := redis.Int(c.Do("EXISTS", queuename)); err != nil {
+	if exist, err := redis.Int(c.Do("HEXISTS", key,field)); err != nil {
 
 		golog.Crit(err.Error())
 
@@ -25,7 +27,7 @@ func InsertCharacter(golog syslog.Writer, c redis.Conn, queuename string, charac
 
 		} else {
 
-			if bcharacter, err := redis.Bytes(c.Do("LINDEX", queuename, 0)); err != nil {
+			if bcharacter, err := redis.Bytes(c.Do("HGET", key, field)); err != nil {
 
 				golog.Crit(err.Error())
 
@@ -68,7 +70,7 @@ func InsertCharacter(golog syslog.Writer, c redis.Conn, queuename string, charac
 
 		bcharacter, _ := json.Marshal(character)
 
-		if _, err := c.Do("LPUSH", queuename, bcharacter); err != nil {
+		if _, err := c.Do("HSET", key,field, bcharacter); err != nil {
 
 			golog.Crit(err.Error())
 
