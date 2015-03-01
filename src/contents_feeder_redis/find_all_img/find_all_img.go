@@ -2,11 +2,9 @@ package find_all_img
 
 import (
 	"domains"
-	//	"fmt"
 	"contents_feeder_redis/findfreeparagraph"
 	"contents_feeder_redis/insert_local_redis"
 	"database/sql"
-//	"encoding/json"
 	"github.com/garyburd/redigo/redis"
 	"log/syslog"
 	"math/rand"
