@@ -27,7 +27,7 @@ func ImageShow(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	id := c.URLParams["id"]
 	imgfile := c.URLParams["imgfile"]
-	mime := c.URLParams["mime"]
+//	mime := c.URLParams["mime"]
 	
 	if c.URLParams["width"] !="" {
 		
@@ -43,16 +43,13 @@ func ImageShow(c web.C, w http.ResponseWriter, r *http.Request) {
 			
 	}	
 
-	w.Header().Set("Content-Type", "image/"+mime)
+	w.Header().Set("Content-Type", "image/jpeg")
 
 	filestr := config.Store.StoreDir + id + "/original/" + imgfile
-
-//	fmt.Println(filestr)
 
 	file, err := imaging.Open(filestr)
 //	defer file.Close()
 	if err != nil {
-		//			log.Println(err.Error())
 		golog.Err(err.Error()+" "+filestr)
 		return
 	}

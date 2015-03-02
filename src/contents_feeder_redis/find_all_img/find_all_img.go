@@ -142,10 +142,6 @@ func (characters *Characters) Create_local_charters(golog syslog.Writer, site st
 	for i, _ := range characters.CharactersRedis {
 
 		character := characters.CharactersRedis[i]
-
-//		queuename := site + ":ch:" + strconv.Itoa(characters.CharactersRedis[i].Id)
-//		queuename := site + ":ch:"
-//		id :=characters.CharactersRedis[i].Id
 				
 		insert_local_redis.InsertCharacter(golog,c,site,character,deltahours)
 	}
