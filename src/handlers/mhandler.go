@@ -13,6 +13,7 @@ import (
 	"sync"
 //	"net/url"
 	"net"
+	"strings"
 )
 
 var startOnce sync.Once
@@ -33,6 +34,11 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 		
 		site="www.test.com"
 	}
+	
+	if strings.HasPrefix(site,"192.168.") {
+		
+		site="www.test.com"
+	}	
 	
 	golog.Info("Site "+site)
 	
