@@ -42,7 +42,7 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 		site="www.test.com"
 	}	
 	
-	golog.Info("Site "+site)
+//	golog.Info("Site "+site)
 	
 	rds, err := redis.Dial("tcp", ":6379")
 	if err != nil {
