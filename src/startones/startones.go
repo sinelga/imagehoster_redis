@@ -30,7 +30,7 @@ func Start() (syslog.Writer, domains.Config) {
 
 	}
 	
-	golog.Info(config.Database.ConStr)
+//	golog.Info(config.Database.ConStr)
 
 	return *golog, config
 
