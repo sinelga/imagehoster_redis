@@ -1,4 +1,4 @@
 #! /bin/bash
 
-cd /home/juno/git/imagehoster_redis
+cd /home/juno/git/
 bin/app
