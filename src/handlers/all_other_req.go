@@ -7,7 +7,7 @@ import (
 	//	"domains"
 
 	"handlers/getOne"
-	"net"
+//	"net"
 	"startones"
 	"strconv"
 	"strings"
@@ -24,19 +24,21 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	
 	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
-	site, _, err := net.SplitHostPort(r.Host)
-	if err != nil {
-		
-		golog.Err(err.Error())
-		
-	}
+//	site, _, err := net.SplitHostPort(r.Host)
+//	if err != nil {
+//		
+//		golog.Err(err.Error())
+//		
+//	}
+	
+	site :=r.Host
 	
 	
-	if site =="" {
-		
-		site = r.Host
-				
-	}
+//	if site =="" {
+//		
+//		site = r.Host
+//				
+//	}
 	
 	golog.Info("Elaborate other ->site "+site+" host "+r.Host)
 
