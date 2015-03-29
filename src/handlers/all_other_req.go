@@ -21,6 +21,8 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		golog, config = startones.Start()
 
 	})
+	
+	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 	site, _, _ := net.SplitHostPort(r.Host)
 	
