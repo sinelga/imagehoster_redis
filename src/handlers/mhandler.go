@@ -3,15 +3,16 @@ package handlers
 import (
 	"domains"
 	"encoding/json"
-	"github.com/zenazn/goji/web"
 	"github.com/garyburd/redigo/redis"
+	"github.com/zenazn/goji/web"
 	"handlers/getAll"
 	"handlers/getOne"
 	"log/syslog"
 	"net/http"
 	"startones"
 	"sync"
-//	"net/url"
+	//	"net/url"
+//	"handlers/interceptor"
 	"net"
 	"strings"
 )
@@ -27,23 +28,21 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 		golog, config = startones.Start()
 
 	})
-	
-	golog.Info("UserAgent "+r.UserAgent()+" Host "+r.Host+" RequestURI "+ r.RequestURI+" r.RemoteAddr "+r.RemoteAddr+" referer "+r.Referer() )
-	
+
+	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
+
 	site, _, _ := net.SplitHostPort(r.Host)
-			
+
 	if site == "localhost" {
-		
-		site="www.test.com"
+
+		site = "www.test.com"
 	}
-	
-	if strings.HasPrefix(site,"192.168.") {
-		
-		site="www.test.com"
-	}	
-	
-//	golog.Info("Site "+site)
-	
+
+	if strings.HasPrefix(site, "192.168.") {
+
+		site = "www.test.com"
+	}
+
 	rds, err := redis.Dial("tcp", ":6379")
 	if err != nil {
 
@@ -52,36 +51,42 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 	}
 	defer rds.Close()
 
-	id := c.URLParams["id"]
-
 	var bytes []byte
 	var e error
 
-	if id == "" {
+//	if strings.HasPrefix(r.URL.Path, "/interceptor") {
+//
+//		interceptor.Check(golog, rds)
+//
+//	} else {
 
-		characters := getAll.GetAll(golog,rds,site)
+		id := c.URLParams["id"]
 
-		bytes, e = json.Marshal(characters)
-		if e != nil {
+		if id == "" {
 
-			golog.Err(e.Error())
+			characters := getAll.GetAll(golog, rds, site)
+
+			bytes, e = json.Marshal(characters)
+			if e != nil {
+
+				golog.Err(e.Error())
+
+			}
+
+		} else {
+
+			character,_ := getOne.GetById(golog, rds, site, id)
+
+			bytes, e = json.Marshal(character)
+			if e != nil {
+
+				golog.Err(e.Error())
+
+			}
 
 		}
 
-	} else {
-
-
-		character := getOne.GetById(golog,rds,site, id)
-
-		bytes, e = json.Marshal(character)
-		if e != nil {
-
-			golog.Err(e.Error())
-
-		}
-
-	}
-
+//	}
 	w.Write(bytes)
 
 }
