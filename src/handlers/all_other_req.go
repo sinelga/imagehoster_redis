@@ -24,7 +24,13 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	
 	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
-	site, _, _ := net.SplitHostPort(r.Host)
+	site, _, err := net.SplitHostPort(r.Host)
+	if err != nil {
+		
+		golog.Err(err.Error())
+		
+	}
+	
 	
 	if site =="" {
 		
