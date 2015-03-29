@@ -3,16 +3,12 @@ package handlers
 import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/zenazn/goji/web"
-	"net/http"
-	//	"domains"
-
 	"handlers/getOne"
-//	"net"
+	"net/http"
+	"handlers/robots"
 	"startones"
 	"strconv"
 	"strings"
-	//	"sync"
-	//	"log/syslog"
 )
 
 func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
@@ -21,26 +17,12 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		golog, config = startones.Start()
 
 	})
-	
+
 	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
-//	site, _, err := net.SplitHostPort(r.Host)
-//	if err != nil {
-//		
-//		golog.Err(err.Error())
-//		
-//	}
-	
-	site :=r.Host
-	
-	
-//	if site =="" {
-//		
-//		site = r.Host
-//				
-//	}
-	
-	golog.Info("Elaborate other ->site "+site+" host "+r.Host)
+	site := r.Host
+
+	golog.Info("Elaborate other ->site " + site + " host " + r.Host)
 
 	if site == "localhost" {
 
@@ -67,24 +49,32 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	path := r.URL.Path
 
-	id_arr := strings.Split(path, "/")
+	if strings.HasPrefix(path, "/robots.txt") {
+		
+		robots.Generate(golog,w,site)
 
-	if len(id_arr) > 0 {
+	} else {
 
-		if _, err := strconv.Atoi(id_arr[1]); err == nil {
+		id_arr := strings.Split(path, "/")
 
-			_, exist := getOne.GetById(golog, rds, site, id_arr[1])
+		if len(id_arr) > 0 {
 
-			if exist {
+			if _, err := strconv.Atoi(id_arr[1]); err == nil {
 
-				http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/index.html")
+				_, exist := getOne.GetById(golog, rds, site, id_arr[1])
+
+				if exist {
+
+					http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/index.html")
+
+				}
 
 			}
 
 		}
 
-	}
+		http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/404.html")
 
-	http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/404.html")
+	}
 
 }

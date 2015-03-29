@@ -1,11 +1,8 @@
 package getOne
 
 import (
-	//	"database/sql"
 	"domains"
 	"github.com/garyburd/redigo/redis"
-	//	"fmt"
-	//	_ "github.com/go-sql-driver/mysql"
 	"encoding/json"
 	"log/syslog"
 )
