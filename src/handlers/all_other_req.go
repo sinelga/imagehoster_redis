@@ -23,6 +23,8 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	})
 
 	site, _, _ := net.SplitHostPort(r.Host)
+	
+	golog.Info("Elaborate other ->site "+site+" host "+r.Host)
 
 	if site == "localhost" {
 

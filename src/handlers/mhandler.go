@@ -12,7 +12,7 @@ import (
 	"startones"
 	"sync"
 	//	"net/url"
-//	"handlers/interceptor"
+	//	"handlers/interceptor"
 	"net"
 	"strings"
 )
@@ -54,39 +54,33 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 	var bytes []byte
 	var e error
 
-//	if strings.HasPrefix(r.URL.Path, "/interceptor") {
-//
-//		interceptor.Check(golog, rds)
-//
-//	} else {
+	id := c.URLParams["id"]
 
-		id := c.URLParams["id"]
+	if id == "" {
 
-		if id == "" {
+		characters := getAll.GetAll(golog, rds, site)
 
-			characters := getAll.GetAll(golog, rds, site)
+		bytes, e = json.Marshal(characters)
+		if e != nil {
 
-			bytes, e = json.Marshal(characters)
-			if e != nil {
-
-				golog.Err(e.Error())
-
-			}
-
-		} else {
-
-			character,_ := getOne.GetById(golog, rds, site, id)
-
-			bytes, e = json.Marshal(character)
-			if e != nil {
-
-				golog.Err(e.Error())
-
-			}
+			golog.Err(e.Error())
 
 		}
 
-//	}
+	} else {
+
+		character, _ := getOne.GetById(golog, rds, site, id)
+
+		bytes, e = json.Marshal(character)
+		if e != nil {
+
+			golog.Err(e.Error())
+
+		}
+
+	}
+
+	//	}
 	w.Write(bytes)
 
 }
