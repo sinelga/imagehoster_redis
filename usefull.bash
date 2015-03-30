@@ -43,6 +43,6 @@ bin/sitemap_maker -site alastonkuvia.info -limit 333 >/home/juno/git/8_fi_FIporn
 bin/contents_feeder_redis --site=www.teinit.info --deltahours=50
 bin/contents_feeder_redis --site=teinit.info --deltahours=50
 
-bin/sitemap_maker -site www.teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_teinit.info.info.xml
+bin/sitemap_maker -site www.teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_www.teinit.info.info.xml
 bin/sitemap_maker -site teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_teinit.info.xml
 
