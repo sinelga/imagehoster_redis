@@ -73,7 +73,8 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 		}
 
-		http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/404.html")
+//		http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/404.html")
+		http.NotFound(w,r)
 
 	}
 
