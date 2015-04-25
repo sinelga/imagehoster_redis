@@ -9,7 +9,7 @@ import (
 func Generate(golog syslog.Writer, w http.ResponseWriter, site string) {
 
 	var buffer bytes.Buffer
-	buffer.WriteString("User-agent: *\nAllow: /\nSitemap: http://" + site + "/sitemap_"+site+".xml\n")
+	buffer.WriteString("User-agent: *\nAllow: /\nSitemap: http://" + site + "/sitemap.xml\n")
 
 	w.Header().Add("Content-type", "text/plain")
 	w.Write(buffer.Bytes())

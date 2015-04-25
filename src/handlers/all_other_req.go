@@ -6,6 +6,7 @@ import (
 	"handlers/getOne"
 	"net/http"
 	"handlers/robots"
+	"handlers/sitemap"
 	"startones"
 	"strconv"
 	"strings"
@@ -53,6 +54,10 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		
 		robots.Generate(golog,w,site)
 
+	} else if strings.HasPrefix(path, "/sitemap.xml") {
+		
+		sitemap.CheckGenerate(golog,w,site)
+		
 	} else {
 
 		id_arr := strings.Split(path, "/")
@@ -65,7 +70,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				if exist {
 
-					http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/index.html")
+					http.ServeFile(w, r, "/home/juno/git/9_fi_FIporno_desk/dist/index.html")
 
 				}
 
@@ -73,7 +78,6 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 		}
 
-//		http.ServeFile(w, r, "/home/juno/git/8_fi_FIporno_desk/dist/404.html")
 		http.NotFound(w,r)
 
 	}
