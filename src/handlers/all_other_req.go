@@ -70,7 +70,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				if exist {
 
-					http.ServeFile(w, r, "/home/juno/git/9_fi_FIporno_desk/dist/index.html")
+					http.ServeFile(w, r, "/home/juno/git/9_fi_FI_desk_mobile/dist/index.html")
 
 				}
 
