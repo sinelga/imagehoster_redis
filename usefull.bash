@@ -46,3 +46,9 @@ bin/contents_feeder_redis --site=teinit.info --deltahours=50
 bin/sitemap_maker -site www.teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_www.teinit.info.info.xml
 bin/sitemap_maker -site teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_teinit.info.xml
 
+bin/contents_feeder_redis --site=www.panee.fi --deltahours=50
+bin/contents_feeder_redis --site=panee.fi --deltahours=50
+
+
+
+
