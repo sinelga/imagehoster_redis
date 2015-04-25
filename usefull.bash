@@ -49,9 +49,12 @@ bin/sitemap_maker -site teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk
 #common38ang
 bin/contents_feeder_redis --site=www.panee.fi --deltahours=50
 bin/contents_feeder_redis --site=panee.fi --deltahours=50
+bin/contents_feeder_redis --site=chat.panee.fi --deltahours=50
 
 bin/contents_feeder_redis --site=www.suomalaisia.com --deltahours=50
 bin/contents_feeder_redis --site=suomalaisia.com --deltahours=50
+
+
 
 
 
