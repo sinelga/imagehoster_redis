@@ -1,11 +1,9 @@
 package getAll
 
 import (
-	//	"database/sql"
 	"domains"
 	"fmt"
 	"github.com/garyburd/redigo/redis"
-	//	_ "github.com/go-sql-driver/mysql"
 	"log/syslog"
 
 	"encoding/json"
@@ -23,71 +21,83 @@ func shuffleSlice(slice []interface{}) []interface{} {
 	return slice
 }
 
-func GetAll(golog syslog.Writer, c redis.Conn, site string) []domains.CharacterRedis {
+func GetAll(golog syslog.Writer, c redis.Conn, site string) ([]domains.CharacterRedis,bool) {
 
 	var charactersRedis []domains.CharacterRedis
+	var exist bool = false
 
-	if allfilds, err := redis.Strings(c.Do("HKEYS", site)); err != nil {
+	if existint, err := redis.Int(c.Do("EXISTS", site)); err != nil {
 
-		golog.Crit(err.Error())
+		golog.Crit("bcharacterRedis " + err.Error() + " " + site)
 
 	} else {
 
-		//				set := make(map[int]string)
-		list := make([]interface{}, len(allfilds))
+		if existint == 1 {
 
-		for i, fild := range allfilds {
+			exist = true
+			if allfilds, err := redis.Strings(c.Do("HKEYS", site)); err != nil {
 
-			list[i] = fild
+				golog.Crit(err.Error())
 
-		}
+			} else {
 
-		shuffleSlice(list)
+				list := make([]interface{}, len(allfilds))
 
-		var args []interface{}
+				for i, fild := range allfilds {
 
-		args = append(args, site)
+					list[i] = fild
 
-		for i := 0; i < 15; i++ {
+				}
 
-			args = append(args, list[i].(string))
+				shuffleSlice(list)
 
-		}
+				var args []interface{}
 
-		if bcharactersRedis, err := redis.MultiBulk(c.Do("HMGET", args...)); err != nil {
+				args = append(args, site)
 
-			golog.Crit(err.Error())
+				for i := 0; i < 15; i++ {
 
-		} else {
+					args = append(args, list[i].(string))
 
-			fmt.Println(len(bcharactersRedis))
+				}
 
-			for _, x := range bcharactersRedis {
-				var v, ok = x.([]byte)
-				if ok {
-					fmt.Println(string(v))
+				if bcharactersRedis, err := redis.MultiBulk(c.Do("HMGET", args...)); err != nil {
 
-					var character domains.CharacterRedis
+					golog.Crit(err.Error())
 
-					if err := json.Unmarshal(v, &character); err != nil {
-						golog.Crit(err.Error())
-					} else {
+				} else {
 
-						if character.Sex == "female" {
+					fmt.Println(len(bcharactersRedis))
 
-							charactersRedis = append(charactersRedis, character)
+					for _, x := range bcharactersRedis {
+						var v, ok = x.([]byte)
+						if ok {
+							fmt.Println(string(v))
+
+							var character domains.CharacterRedis
+
+							if err := json.Unmarshal(v, &character); err != nil {
+								golog.Crit(err.Error())
+							} else {
+
+								if character.Sex == "female" {
+
+									charactersRedis = append(charactersRedis, character)
+
+								}
+
+							}
 
 						}
-
 					}
 
 				}
+
 			}
 
 		}
-
 	}
 
-	return charactersRedis
+	return charactersRedis,exist
 
 }

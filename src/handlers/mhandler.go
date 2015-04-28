@@ -29,7 +29,7 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	})
 
-	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
+//	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 	site, _, _ := net.SplitHostPort(r.Host)
 
@@ -58,13 +58,21 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	if id == "" {
 
-		characters := getAll.GetAll(golog, rds, site)
+		characters,exist := getAll.GetAll(golog, rds, site)
+
+		if !exist {
+			
+			http.NotFound(w,r)
+		} else {
+
 
 		bytes, e = json.Marshal(characters)
 		if e != nil {
 
 			golog.Err(e.Error())
 
+		}
+		
 		}
 
 	} else {
@@ -80,7 +88,6 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	}
 
-	//	}
 	w.Write(bytes)
 
 }
