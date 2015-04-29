@@ -22,14 +22,14 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	var variant string
 	for k, v := range r.Header {
 
-		golog.Info("key: " + k + "value: " + v[0])
+		golog.Info("key: " + k + " value: " + v[0])
 	}
 
 	variant = r.Header["X-Variant"][0]
 
 	if variant != "" {
 
-//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
+		//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 		site := r.Host
 
@@ -76,6 +76,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				if _, err := strconv.Atoi(id_arr[1]); err == nil {
 
+					golog.Info("Only control on exist ")
 					_, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
 					if exist {

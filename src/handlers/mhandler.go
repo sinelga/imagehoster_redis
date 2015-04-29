@@ -75,6 +75,7 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	} else {
 
+		
 		character, _ := getOne.GetById(golog, rds, site, id)
 
 		bytes, e = json.Marshal(character)
