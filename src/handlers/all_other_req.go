@@ -4,9 +4,9 @@ import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/zenazn/goji/web"
 	"handlers/getOne"
-	"net/http"
 	"handlers/robots"
 	"handlers/sitemap"
+	"net/http"
 	"startones"
 	"strconv"
 	"strings"
@@ -19,66 +19,82 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	})
 
-	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
+	var variant string
+	for k, v := range r.Header {
 
-	site := r.Host
-
-	golog.Info("Elaborate other ->site " + site + " host " + r.Host)
-
-	if site == "localhost" {
-
-		site = "www.test.com"
+		golog.Info("key: " + k + "value: " + v[0])
 	}
 
-	if strings.HasPrefix(site, "192.168.") {
+	variant = r.Header["X-Variant"][0]
 
-		site = "www.test.com"
-	}
+	if variant != "" {
 
-	if strings.HasPrefix(site, "127.0.0.1") {
+//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
-		site = "www.test.com"
-	}
+		site := r.Host
 
-	rds, err := redis.Dial("tcp", ":6379")
-	if err != nil {
+		golog.Info("Elaborate other ->site " + site + " host " + r.Host)
 
-		golog.Crit(err.Error())
+		if site == "localhost" {
 
-	}
-	defer rds.Close()
+			site = "www.test.com"
+		}
 
-	path := r.URL.Path
+		if strings.HasPrefix(site, "192.168.") {
 
-	if strings.HasPrefix(path, "/robots.txt") {
-		
-		robots.Generate(golog,w,site)
+			site = "www.test.com"
+		}
 
-	} else if strings.HasPrefix(path, "/sitemap.xml") {
-		
-		sitemap.CheckGenerate(golog,w,site)
-		
-	} else {
+		if strings.HasPrefix(site, "127.0.0.1") {
 
-		id_arr := strings.Split(path, "/")
+			site = "www.test.com"
+		}
 
-		if len(id_arr) > 0 {
+		rds, err := redis.Dial("tcp", ":6379")
+		if err != nil {
 
-			if _, err := strconv.Atoi(id_arr[1]); err == nil {
+			golog.Crit(err.Error())
 
-				_, exist := getOne.GetById(golog, rds, site, id_arr[1])
+		}
+		defer rds.Close()
 
-				if exist {
+		path := r.URL.Path
 
-					http.ServeFile(w, r, "/home/juno/git/9_fi_FI_desk_mobile/dist/index.html")
+		if strings.HasPrefix(path, "/robots.txt") {
+
+			robots.Generate(golog, w, site)
+
+		} else if strings.HasPrefix(path, "/sitemap.xml") {
+
+			sitemap.CheckGenerate(golog, w, site)
+
+		} else {
+
+			id_arr := strings.Split(path, "/")
+
+			if len(id_arr) > 0 {
+
+				if _, err := strconv.Atoi(id_arr[1]); err == nil {
+
+					_, exist := getOne.GetById(golog, rds, site, id_arr[1])
+
+					if exist {
+
+						http.ServeFile(w, r, "/home/juno/git/"+variant+"_fi_FI_desk_mobile/dist/index.html")
+
+					}
 
 				}
 
 			}
 
+			http.NotFound(w, r)
+
 		}
 
-		http.NotFound(w,r)
+	} else {
+
+		golog.Err("variant NOT found!!!")
 
 	}
 

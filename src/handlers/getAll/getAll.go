@@ -2,10 +2,9 @@ package getAll
 
 import (
 	"domains"
-	"fmt"
+//	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"log/syslog"
-
 	"encoding/json"
 	"math/rand"
 	"time"
@@ -67,12 +66,12 @@ func GetAll(golog syslog.Writer, c redis.Conn, site string) ([]domains.Character
 
 				} else {
 
-					fmt.Println(len(bcharactersRedis))
+//					fmt.Println(len(bcharactersRedis))
 
 					for _, x := range bcharactersRedis {
 						var v, ok = x.([]byte)
 						if ok {
-							fmt.Println(string(v))
+//							fmt.Println(string(v))
 
 							var character domains.CharacterRedis
 
