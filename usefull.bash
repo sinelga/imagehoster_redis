@@ -54,6 +54,9 @@ bin/contents_feeder_redis --site=chat.panee.fi --deltahours=50
 bin/contents_feeder_redis --site=www.suomalaisia.com --deltahours=50
 bin/contents_feeder_redis --site=suomalaisia.com --deltahours=50
 
+bin/contents_feeder_redis --site=www.alasti.eu --deltahours=50
+bin/contents_feeder_redis --site=alasti.eu --deltahours=50
+bin/contents_feeder_redis --site=chat.alasti.eu --deltahours=50
 
 
 
