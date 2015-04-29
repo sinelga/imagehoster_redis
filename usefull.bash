@@ -58,6 +58,9 @@ bin/contents_feeder_redis --site=www.alasti.eu --deltahours=50
 bin/contents_feeder_redis --site=alasti.eu --deltahours=50
 bin/contents_feeder_redis --site=chat.alasti.eu --deltahours=50
 
+bin/contents_feeder_redis --site=www.nuori.co --deltahours=50
+bin/contents_feeder_redis --site=nuori.co --deltahours=50
+
 
 
 
