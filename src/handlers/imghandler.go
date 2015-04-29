@@ -1,14 +1,12 @@
 package handlers
 
 import (
-//	"fmt"
+
 	"github.com/zenazn/goji/web"
 //	"image"
 	"image/jpeg"
 //	"image/png"
 	"net/http"
-//	"os"
-//	"github.com/nfnt/resize"
 	"github.com/disintegration/imaging"
 	"runtime"
 	"startones"
@@ -24,7 +22,6 @@ func ImageShow(c web.C, w http.ResponseWriter, r *http.Request) {
 	width := 100;
 	height := 100;
 	
-
 	id := c.URLParams["id"]
 	imgfile := c.URLParams["imgfile"]
 //	mime := c.URLParams["mime"]
