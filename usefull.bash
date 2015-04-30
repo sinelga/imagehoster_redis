@@ -66,6 +66,10 @@ bin/contents_feeder_redis --site=allfreexxx.com --deltahours=50
 bin/contents_feeder_redis --site=chat.allfreexxx.com --deltahours=50
 
 
+bin/contents_feeder_redis --site=www.klickhere.mobi --deltahours=50
+bin/contents_feeder_redis --site=klickhere.mobi --deltahours=50
+bin/contents_feeder_redis --site=chat.klickhere.mobi --deltahours=50
+
 
 
 
