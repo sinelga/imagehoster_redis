@@ -74,6 +74,20 @@ bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50
 bin/contents_feeder_redis --site=bestsex.cc --deltahours=50
 bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50
 
+bin/contents_feeder_redis --site=www.rouvat.fi --deltahours=50
+bin/contents_feeder_redis --site=rouvat.fi --deltahours=50
+bin/contents_feeder_redis --site=chat.rouvat.fi --deltahours=50
+
+bin/contents_feeder_redis --site=www.vittuja.fi --deltahours=50
+bin/contents_feeder_redis --site=vittuja.fi --deltahours=50
+bin/contents_feeder_redis --site=chat.vittuja.fi--deltahours=50
+
+
+
+
+
+
+
 
 
 
