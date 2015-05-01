@@ -80,7 +80,13 @@ bin/contents_feeder_redis --site=chat.rouvat.fi --deltahours=50
 
 bin/contents_feeder_redis --site=www.vittuja.fi --deltahours=50
 bin/contents_feeder_redis --site=vittuja.fi --deltahours=50
-bin/contents_feeder_redis --site=chat.vittuja.fi--deltahours=50
+bin/contents_feeder_redis --site=chat.vittuja.fi --deltahours=50
+
+bin/contents_feeder_redis --site=www.mostpopularsites.org --deltahours=50
+bin/contents_feeder_redis --site=mostpopularsites.org --deltahours=50
+bin/contents_feeder_redis --site=chat.mostpopularsites.org --deltahours=50
+
+
 
 
 
