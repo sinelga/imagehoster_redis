@@ -70,6 +70,11 @@ bin/contents_feeder_redis --site=www.klickhere.mobi --deltahours=50
 bin/contents_feeder_redis --site=klickhere.mobi --deltahours=50
 bin/contents_feeder_redis --site=chat.klickhere.mobi --deltahours=50
 
+bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50
+bin/contents_feeder_redis --site=bestsex.cc --deltahours=50
+bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50
+
+
 
 
 
