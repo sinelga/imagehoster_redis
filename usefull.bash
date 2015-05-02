@@ -86,8 +86,10 @@ bin/contents_feeder_redis --site=www.mostpopularsites.org --deltahours=50
 bin/contents_feeder_redis --site=mostpopularsites.org --deltahours=50
 bin/contents_feeder_redis --site=chat.mostpopularsites.org --deltahours=50
 
-
-
+#common39ang
+bin/contents_feeder_redis --site=www.pornocopia.net --deltahours=50
+bin/contents_feeder_redis --site=pornocopia.net --deltahours=50
+bin/contents_feeder_redis --site=chat.pornocopia.net --deltahours=50
 
 
 
