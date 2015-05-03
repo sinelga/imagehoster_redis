@@ -96,6 +96,10 @@ bin/contents_feeder_redis --site=www.redtubepornos.org --deltahours=50
 bin/contents_feeder_redis --site=redtubepornos.org --deltahours=50
 bin/contents_feeder_redis --site=chat.redtubepornos.org --deltahours=50
 
+bin/contents_feeder_redis --site=www.xporno18.com --deltahours=50
+bin/contents_feeder_redis --site=xporno18.com --deltahours=50
+bin/contents_feeder_redis --site=chat.xporno18.com --deltahours=50
+
 
 
 

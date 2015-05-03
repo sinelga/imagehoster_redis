@@ -19,7 +19,6 @@ import (
 var siteFlag = flag.String("site", "", "must be test.com www.test.com")
 var deltahoursFlag = flag.Int("deltahours", 0, " > 0")
 
-
 func main() {
 	flag.Parse() // Scan the arguments list
 
@@ -41,39 +40,32 @@ func main() {
 
 	}
 	defer c.Close()
-	
+
 	site := *siteFlag
-	deltahours :=*deltahoursFlag
-	
-	if site !="" && deltahours > 0{	 
+	deltahours := *deltahoursFlag
 
-	names := find_names.FindAll(golog, *db)
-	phones := find_adv_phone.FindAll(golog, *db)
-	regions := find_regions.FindAll(golog, *db)
+	if site != "" && deltahours > 0 {
 
-	var ch find_all_img.Characters
-	//
-	ch.Find_all_img("/home/juno/git/imagehoster_redis/upload/img")
+		names := find_names.FindAll(golog, *db)
+		phones := find_adv_phone.FindAll(golog, *db)
+		regions := find_regions.FindAll(golog, *db)
 
-	ch.Add_name_phone_region(golog, names, phones, regions)
+		var ch find_all_img.Characters
+		//
+		ch.Find_all_img("/home/juno/git/imagehoster_redis/upload/img")
 
-	ch.Find_age(golog, *db)
+		ch.Add_name_phone_region(golog, names, phones, regions)
 
-	ch.Find_free_paragraph(golog, c, "fi_FI", "porno")
-	
-	ch.Create_local_charters(golog,site,deltahours)
+		ch.Find_age(golog, *db)
 
-//	for i, _ := range ch.CharactersRedis {
-//
-//		fmt.Println(ch.CharactersRedis[i].Name, ch.CharactersRedis[i].Phone, ch.CharactersRedis[i].City, ch.CharactersRedis[i].Age,ch.CharactersRedis[i].Moto,ch.CharactersRedis[i].Description)
-//		
-//	}
+		ch.Find_free_paragraph(golog, c, "fi_FI", "porno")
+
+		ch.Create_local_charters(golog, site, deltahours)
 
 	} else {
-		
+
 		fmt.Println("Need paramater --site=wwww.test.com --deltahours=240")
-		
-		
+
 	}
 
 }
