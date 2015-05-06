@@ -20,18 +20,29 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	})
 
 	var variant string
+//	var path string
+	path := r.URL.Path
+	site := r.Host
+	
+
 	for k, v := range r.Header {
 
 		golog.Info("key: " + k + " value: " + v[0])
+		
+		
+		if k == "X-Variant" {
+			variant = r.Header["X-Variant"][0]
+			
+		}
+								
 	}
 
-	variant = r.Header["X-Variant"][0]
+	
 
 	if variant != "" {
 
 		//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
-		site := r.Host
 
 		golog.Info("Elaborate other ->site " + site + " host " + r.Host)
 
@@ -62,7 +73,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 		if strings.HasPrefix(path, "/robots.txt") {
 
-			robots.Generate(golog, w, site)
+			robots.Generate(golog, w, r,site)
 
 		} else if strings.HasPrefix(path, "/sitemap.xml") {
 
@@ -96,6 +107,15 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 	} else {
 
 		golog.Err("variant NOT found!!!")
+		
+		
+		if strings.HasPrefix(path, "/robots.txt") {
+
+			robots.Generate(golog, w,r, site)
+
+		}
+				
+		
 
 	}
 
