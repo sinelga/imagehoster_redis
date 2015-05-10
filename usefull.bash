@@ -101,6 +101,10 @@ bin/contents_feeder_redis --site=xporno18.com --deltahours=50
 bin/contents_feeder_redis --site=chat.xporno18.com --deltahours=50
 
 
+bin/contents_feeder_redis --site=www.sexualwish.com --deltahours=50
+bin/contents_feeder_redis --site=sexualwish.com --deltahours=50
+bin/contents_feeder_redis --site=chat.sexualwish.com --deltahours=50
+
 
 
 
