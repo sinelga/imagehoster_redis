@@ -47,63 +47,68 @@ bin/sitemap_maker -site www.teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_
 bin/sitemap_maker -site teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_teinit.info.xml
 
 #common38ang
-bin/contents_feeder_redis --site=www.panee.fi --deltahours=50
-bin/contents_feeder_redis --site=panee.fi --deltahours=50
-bin/contents_feeder_redis --site=chat.panee.fi --deltahours=50
+bin/contents_feeder_redis --site=www.panee.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=panee.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.panee.fi --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.suomalaisia.com --deltahours=50
-bin/contents_feeder_redis --site=suomalaisia.com --deltahours=50
+bin/contents_feeder_redis --site=www.suomalaisia.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=suomalaisia.com --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.alasti.eu --deltahours=50
-bin/contents_feeder_redis --site=alasti.eu --deltahours=50
-bin/contents_feeder_redis --site=chat.alasti.eu --deltahours=50
+bin/contents_feeder_redis --site=www.alasti.eu --deltahours=50 #remake
+bin/contents_feeder_redis --site=alasti.eu --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.alasti.eu --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.nuori.co --deltahours=50
-bin/contents_feeder_redis --site=nuori.co --deltahours=50
+bin/contents_feeder_redis --site=www.nuori.co --deltahours=50 #remake
+bin/contents_feeder_redis --site=nuori.co --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.allfreexxx.com --deltahours=50
-bin/contents_feeder_redis --site=allfreexxx.com --deltahours=50
-bin/contents_feeder_redis --site=chat.allfreexxx.com --deltahours=50
+bin/contents_feeder_redis --site=www.allfreexxx.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=allfreexxx.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.allfreexxx.com --deltahours=50 #remake
 
 
-bin/contents_feeder_redis --site=www.klickhere.mobi --deltahours=50
-bin/contents_feeder_redis --site=klickhere.mobi --deltahours=50
-bin/contents_feeder_redis --site=chat.klickhere.mobi --deltahours=50
+bin/contents_feeder_redis --site=www.klickhere.mobi --deltahours=50 #remake
+bin/contents_feeder_redis --site=klickhere.mobi --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.klickhere.mobi --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50
-bin/contents_feeder_redis --site=bestsex.cc --deltahours=50
-bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50
+bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50 #remake
+bin/contents_feeder_redis --site=bestsex.cc --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.rouvat.fi --deltahours=50
-bin/contents_feeder_redis --site=rouvat.fi --deltahours=50
-bin/contents_feeder_redis --site=chat.rouvat.fi --deltahours=50
+bin/contents_feeder_redis --site=www.rouvat.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=rouvat.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.rouvat.fi --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.vittuja.fi --deltahours=50
-bin/contents_feeder_redis --site=vittuja.fi --deltahours=50
-bin/contents_feeder_redis --site=chat.vittuja.fi --deltahours=50
+bin/contents_feeder_redis --site=www.vittuja.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=vittuja.fi --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.vittuja.fi --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.mostpopularsites.org --deltahours=50
-bin/contents_feeder_redis --site=mostpopularsites.org --deltahours=50
-bin/contents_feeder_redis --site=chat.mostpopularsites.org --deltahours=50
+bin/contents_feeder_redis --site=www.mostpopularsites.org --deltahours=50 #remake
+bin/contents_feeder_redis --site=mostpopularsites.org --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.mostpopularsites.org --deltahours=50 #remake
 
 #common39ang
-bin/contents_feeder_redis --site=www.pornocopia.net --deltahours=50
-bin/contents_feeder_redis --site=pornocopia.net --deltahours=50
-bin/contents_feeder_redis --site=chat.pornocopia.net --deltahours=50
+bin/contents_feeder_redis --site=www.pornocopia.net --deltahours=50 #remake
+bin/contents_feeder_redis --site=pornocopia.net --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.pornocopia.net --deltahours=50 #remake
 
 
-bin/contents_feeder_redis --site=www.redtubepornos.org --deltahours=50
-bin/contents_feeder_redis --site=redtubepornos.org --deltahours=50
-bin/contents_feeder_redis --site=chat.redtubepornos.org --deltahours=50
+bin/contents_feeder_redis --site=www.redtubepornos.org --deltahours=50 #remake
+bin/contents_feeder_redis --site=redtubepornos.org --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.redtubepornos.org --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.xporno18.com --deltahours=50
-bin/contents_feeder_redis --site=xporno18.com --deltahours=50
-bin/contents_feeder_redis --site=chat.xporno18.com --deltahours=50
+bin/contents_feeder_redis --site=www.xporno18.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=xporno18.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=chat.xporno18.com --deltahours=50 #remake
 
 
-bin/contents_feeder_redis --site=www.sexualwish.com --deltahours=50
-bin/contents_feeder_redis --site=sexualwish.com --deltahours=50
-bin/contents_feeder_redis --site=chat.sexualwish.com --deltahours=50
+bin/contents_feeder_redis --site=www.sexualwish.com --deltahours=50 #remake
+bin/contents_feeder_redis --site=sexualwish.com --deltahours=50  #remake
+bin/contents_feeder_redis --site=chat.sexualwish.com --deltahours=50 #remake
+
+bin/contents_feeder_redis --site=www.seksideitti.fi --deltahours=50
+bin/contents_feeder_redis --site=seksideitti.fi --deltahours=50 
+bin/contents_feeder_redis --site=chat.seksideitti.fi --deltahours=50
+ 
 
 
 
