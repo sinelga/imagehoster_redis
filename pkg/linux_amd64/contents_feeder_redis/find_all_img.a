@@ -1,6 +1,6 @@
 !<arch>
 __.PKGDEF       0           0     0     644     24583     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 $$
 package find_all_img
@@ -205,7 +205,7 @@ package find_all_img
 
 $$
  _go_.6          0           0     0     644     51963     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 !
   go13lddomains.aRcontents_feeder_redis/findfreeparagraph.aTcontents_feeder_redis/insert_local_redis.adatabase/sql.aDgithub.com/garyburd/redigo/redis.alog/syslog.amath/rand.aos.apath.apath/filepath.astrconv.astrings.atime.a ş"".walkpath     dH‹%    H„$0ÿÿÿH;Awè    ëâHìP  HÇ„$ˆ      HÇ„$      H‹œ$p  H‰$H‹œ$h  Hƒû „-  H‹[ ÿÓŠ\$ˆ\$G€|$G …á  H‹œ$X  H‰$H‹œ$`  H‰\$è    H‹\$H‰œ$È   H‹\$H‰œ$Ğ   H‹\$ H‰œ$¸   H‹\$(H‰œ$À   H‹œ$È   H‰$H‹œ$Ğ   H‰\$H    Hl$H‰ïH‰ŞH¥H¥è    H‹\$ H‰œ$8  H‹\$(H‰œ$@  H‹\$0H‰œ$H  H‹œ$8  H‰œ$ğ   H‹œ$@  H‰œ$ø   H‹œ$H  H‰œ$   H‹œ$ø   H‰œ$˜   H‹œ$˜   HƒëH‹¬$ğ   L‹„$ø   L9Ãƒû  HkÛHİH‹] H‰œ$¨   H‹]H‰œ$°   H    H‰$è    H‹\$H‰œ$    H‹œ$    H‰\$pHƒ|$p „š  HÇD$h   HÇD$`   H‹\$pH‰œ$Ø   H‹\$hH‰œ$à   H‹\$`H‰œ$è   H‹œ$Ø   H‰$H‹œ$¨   H‰\$H‹œ$°   H‰\$è    H‹œ$Ø   HƒÃH‰$H‹œ$¸   H‰\$H‹œ$À   H‰\$è    H‹    H‰œ$  H‹    H‰œ$  H‹    H‰œ$  H‹œ$  H‹¬$  H)ëHƒû}gH    H‰$H‹œ$  H‰\$H‹œ$  H‰\$H‹œ$  H‰\$HÇD$    è    H‹\$(H‰œ$  H‹\$0H‰œ$  H‹\$8H‰œ$  H‹œ$  H‰œ$   H‹œ$   HƒÃH‰œ$ˆ   H‹œ$  H‰œ$€   H‹œ$ˆ   H‰\$xH‹œ$  H‰\$XH‹\$xH‰\$PH‹œ$€   H‰\$HH‹\$XH‰œ$  H‹\$PH‰œ$  H‹\$HH‰œ$  H‹œ$  H‹¬$   HkíHëH‰$H‹œ$Ø   H‰\$H‹œ$à   H‰\$H‹œ$è   H‰\$è    H‹œ$  H‰œ$   H‹œ$  H‰œ$(  H‹œ$  H‰œ$0  H    H‰$H‹œ$   H‰\$H‹œ$(  H‰\$H‹œ$0  H‰\$è    HÇ„$ˆ      HÇ„$      HÄP  Ã‰%    éZıÿÿè    ‰éÌûÿÿ&

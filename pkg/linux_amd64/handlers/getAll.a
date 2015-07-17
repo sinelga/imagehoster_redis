@@ -1,6 +1,6 @@
 !<arch>
 __.PKGDEF       0           0     0     644     11058     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 $$
 package getAll
@@ -103,7 +103,7 @@ package getAll
 
 $$
 _go_.6          0           0     0     644     24453     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 !
   go13lddomains.aDgithub.com/garyburd/redigo/redis.alog/syslog.aencoding/json.amath/rand.atime.a þ"".shuffleSlice  À

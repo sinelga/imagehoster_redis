@@ -1,6 +1,6 @@
 !<arch>
 __.PKGDEF       0           0     0     644     11098     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 $$
 package insert_local_redis
@@ -103,7 +103,7 @@ package insert_local_redis
 
 $$
 _go_.6          0           0     0     644     24528     `
-go object linux amd64 go1.4.1 X:precisestack
+go object linux amd64 go1.4.2 X:precisestack
 
 !
   go13lddomains.aencoding/json.a

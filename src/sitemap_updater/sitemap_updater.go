@@ -47,7 +47,6 @@ func main() {
 	defer rds.Close()
 
 	files, _ := filepath.Glob("upload/img/*")
-	//	fmt.Println(files)
 
 	set_all_id := make(map[int]struct{})
 
@@ -171,8 +170,6 @@ func main() {
 
 				golog.Crit(err.Error())
 			}
-
-//			fmt.Println(string(resultXml))
 			
 			createmapfile.Createmap(*golog,f,resultXml)
 
