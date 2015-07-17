@@ -151,7 +151,12 @@ func main() {
 
 				character, _ := getOne.GetById(*golog, rds, site, strconv.Itoa(k))
 
+				golog.Info("character.Moto "+character.Moto)
+				
+												
 				permlink := strings.Split(character.Moto, " ")
+				
+				
 
 				Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + ".html"
 
