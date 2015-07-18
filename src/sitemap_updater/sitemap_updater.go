@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"handlers/getOne"
+	"handlers/sitemap/createmapfile"
 	"io/ioutil"
 	"log"
 	"log/syslog"
@@ -16,7 +17,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"handlers/sitemap/createmapfile"
 )
 
 const APP_VERSION = "0.1"
@@ -151,12 +151,9 @@ func main() {
 
 				character, _ := getOne.GetById(*golog, rds, site, strconv.Itoa(k))
 
-				golog.Info("character.Moto "+character.Moto)
-				
-												
+				golog.Info("character.Moto " + character.Moto)
+
 				permlink := strings.Split(character.Moto, " ")
-				
-				
 
 				Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + ".html"
 
@@ -175,8 +172,8 @@ func main() {
 
 				golog.Crit(err.Error())
 			}
-			
-			createmapfile.Createmap(*golog,f,resultXml)
+
+			createmapfile.Createmap(*golog, f, resultXml)
 
 		}
 
