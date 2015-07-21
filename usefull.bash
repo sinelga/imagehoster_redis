@@ -1,6 +1,9 @@
 GOPATH=$GOPATH:/home/juno/git/imagehoster_redis go test -v
 
 
+5 6 * * * cd /home/juno/git/imagehoster_redis && bin/sitemap_updater
+
+
 
  find . -type f |grep '^./0' |awk '{print "mv "$0" dest"$0  }' 
  find . -type f |grep '^./0' |awk '{print "mkdir -p `dirname "$0"`; mv "$0" dest"$0  }'
