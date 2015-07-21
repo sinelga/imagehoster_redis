@@ -112,6 +112,10 @@ bin/contents_feeder_redis --site=chat.sexualwish.com --deltahours=50 #remake
 bin/contents_feeder_redis --site=www.seksideitti.fi --deltahours=50
 bin/contents_feeder_redis --site=seksideitti.fi --deltahours=50 
 bin/contents_feeder_redis --site=chat.seksideitti.fi --deltahours=50
+
+#common40ang
+bin/contents_feeder_redis --site=teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.teinit.info --deltahours=50
+
  
 
 
