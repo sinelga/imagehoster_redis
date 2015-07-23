@@ -116,7 +116,8 @@ bin/contents_feeder_redis --site=chat.seksideitti.fi --deltahours=50
 #common40ang
 bin/contents_feeder_redis --site=teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.teinit.info --deltahours=50
 bin/contents_feeder_redis --site=alastonkuvia.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.alastonkuvia.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.alastonkuvia.info --deltahours=50
- 
+
+bin/contents_feeder_redis --site=sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sinkkutreffit.org --deltahours=50 
 
 
 
