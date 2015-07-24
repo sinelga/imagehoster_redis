@@ -47,7 +47,6 @@ func (characters *Characters) Find_all_img(dir string) {
 		character.Img_file_name = imgfile[1]
 		idint, _ := strconv.Atoi(imgfile[0])
 		character.Id = idint
-
 		characters.CharactersRedis = append(characters.CharactersRedis, character)
 
 	}
@@ -121,7 +120,7 @@ func (characters *Characters) Find_free_paragraph(golog syslog.Writer, c redis.C
 
 		characters.CharactersRedis[i].Moto = paragraph.Ptitle
 
-		s := []string{paragraph.Pphrase, paragraph.Sentences[0], paragraph.Sentences[1], paragraph.Sentences[2], paragraph.Sentences[3]}
+		s := []string{paragraph.Pphrase, paragraph.Sentences[0], paragraph.Sentences[1], paragraph.Sentences[2], paragraph.Sentences[3], paragraph.Sentences[4]}
 		description := strings.Join(s, " ")
 		characters.CharactersRedis[i].Description = description
 
@@ -141,8 +140,7 @@ func (characters *Characters) Create_local_charters(golog syslog.Writer, site st
 
 	for i, _ := range characters.CharactersRedis {
 
-		character := characters.CharactersRedis[i]
-				
+		character := characters.CharactersRedis[i]				
 		insert_local_redis.InsertCharacter(golog,c,site,character,deltahours)
 	}
 

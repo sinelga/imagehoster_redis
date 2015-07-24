@@ -11,15 +11,6 @@ import (
 
 func FindFromQ(golog syslog.Writer,c redis.Conn, locale string, themes string) domains.Paragraph {
 
-//	redisprotocol := config.Redis.Prot
-//	redishost := config.Redis.Host
-//
-//	c, err := redis.Dial(redisprotocol, redishost)
-//	if err != nil {
-//
-//		golog.Crit(err.Error())
-//
-//	}
 
 	queuename := locale + ":" + themes
 	
