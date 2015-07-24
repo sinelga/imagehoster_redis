@@ -43,11 +43,11 @@ bin/sitemap_maker -site www.alastonkuvia.info -limit 333 >/home/juno/git/8_fi_FI
 bin/sitemap_maker -site alastonkuvia.info -limit 333 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_alastonkuvia.info.xml
 
 
-bin/contents_feeder_redis --site=www.teinit.info --deltahours=50
-bin/contents_feeder_redis --site=teinit.info --deltahours=50
+bin/contents_feeder_redis --site=www.kotirouvat.com --deltahours=50
+bin/contents_feeder_redis --site=kotirouvat.com --deltahours=50
 
-bin/sitemap_maker -site www.teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_www.teinit.info.info.xml
-bin/sitemap_maker -site teinit.info -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_teinit.info.xml
+bin/sitemap_maker -site www.kotirouvat.com -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_www.kotirouvat.com.info.xml
+bin/sitemap_maker -site kotirouvat.com -limit 343 >/home/juno/git/8_fi_FIporno_desk/dist/sitemap_kotirouvat.com.xml
 
 #common38ang
 bin/contents_feeder_redis --site=www.panee.fi --deltahours=50 #remake
@@ -114,12 +114,12 @@ bin/contents_feeder_redis --site=seksideitti.fi --deltahours=50
 bin/contents_feeder_redis --site=chat.seksideitti.fi --deltahours=50
 
 #common40ang
-bin/contents_feeder_redis --site=teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.teinit.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.teinit.info --deltahours=50
+bin/contents_feeder_redis --site=kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kotirouvat.com --deltahours=50
 bin/contents_feeder_redis --site=alastonkuvia.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.alastonkuvia.info --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.alastonkuvia.info --deltahours=50
 
 bin/contents_feeder_redis --site=sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sinkkutreffit.org --deltahours=50 
 
-
+bin/contents_feeder_redis --site=kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kotirouvat.com --deltahours=50
 
 
 
