@@ -18,7 +18,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-//	"github.com/gosimple/slug"
+	//	"github.com/gosimple/slug"
 )
 
 const APP_VERSION = "0.1"
@@ -153,22 +153,24 @@ func main() {
 
 				character, _ := getOne.GetById(*golog, rds, site, strconv.Itoa(k))
 
-				golog.Info("character.Moto " + character.Moto)
+				//				golog.Info("character.Moto " + character.Moto)
+				if character.Sex == "female" {
 
-				permlink := strings.Split(character.Moto, " ")
+					permlink := strings.Split(character.Moto, " ")
 
-				slug.MaxLength = 20
-				slugresalt := slug.Make(character.Description)
+					slug.MaxLength = 20
+					slugresalt := slug.Make(character.Description)
 
-				Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" +slugresalt+".html"
+					Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
 
-				fmt.Println(Url.String())
-				doc := new(domains.Page)
-				doc.Loc = Url.String()
-				doc.Lastmod = time.Now().Format(time.RFC3339)
-				doc.Changefreq = "weekly"
+//					fmt.Println(Url.String())
+					doc := new(domains.Page)
+					doc.Loc = Url.String()
+					doc.Lastmod = time.Now().Format(time.RFC3339)
+					doc.Changefreq = "weekly"
 
-				pages.Pages = append(pages.Pages, doc)
+					pages.Pages = append(pages.Pages, doc)
+				}
 
 			}
 
