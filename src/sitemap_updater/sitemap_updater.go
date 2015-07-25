@@ -6,6 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/garyburd/redigo/redis"
+	"github.com/gosimple/slug"
 	"handlers/getOne"
 	"handlers/sitemap/createmapfile"
 	"io/ioutil"
@@ -17,6 +18,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+//	"github.com/gosimple/slug"
 )
 
 const APP_VERSION = "0.1"
@@ -155,7 +157,10 @@ func main() {
 
 				permlink := strings.Split(character.Moto, " ")
 
-				Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + ".html"
+				slug.MaxLength = 20
+				slugresalt := slug.Make(character.Description)
+
+				Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" +slugresalt+".html"
 
 				fmt.Println(Url.String())
 				doc := new(domains.Page)
