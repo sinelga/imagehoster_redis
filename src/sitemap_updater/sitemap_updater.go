@@ -18,7 +18,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	//	"github.com/gosimple/slug"
 )
 
 const APP_VERSION = "0.1"
