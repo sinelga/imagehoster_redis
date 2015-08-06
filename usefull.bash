@@ -119,8 +119,11 @@ bin/contents_feeder_redis --site=alastonkuvia.info --deltahours=50 && sleep 90 &
 bin/contents_feeder_redis --site=sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sinkkutreffit.org --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sinkkutreffit.org --deltahours=50 
 bin/contents_feeder_redis --site=alaston.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.alaston.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.alaston.fi--deltahours=50
 
-bin/contents_feeder_redis --site=kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kotirouvat.com --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kotirouvat.com --deltahours=50
+bin/contents_feeder_redis --site=pimppi.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.pimppi.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.pimppi.fi --deltahours=50
 
+bin/contents_feeder_redis --site=alastomat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.alastomat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.alastomat.fi --deltahours=50
+
+bin/contents_feeder_redis --site=seksivideo.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksivideo.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksivideo.fi --deltahours=50
 
 
 
