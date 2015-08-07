@@ -123,16 +123,25 @@ bin/contents_feeder_redis --site=alastomat.fi --deltahours=50 && sleep 90 && bin
 bin/contents_feeder_redis --site=seksivideo.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksivideo.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksivideo.fi --deltahours=50
 bin/contents_feeder_redis --site=runkkaus.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.runkkaus.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.runkkaus.fi --deltahours=50
 bin/contents_feeder_redis --site=karvainen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.karvainen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.karvainen.fi --deltahours=50
-
-
 bin/contents_feeder_redis --site=munaa.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.munaa.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.munaa.fi --deltahours=50
-
 bin/contents_feeder_redis --site=teijan.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.teijan.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.teijan.fi --deltahours=50
 
 
+bin/contents_feeder_redis --site=naisen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.naisen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.naisen.fi --deltahours=50
+
+bin/contents_feeder_redis --site=vittua.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.vittua.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.vittua.fi --deltahours=50
+
+bin/contents_feeder_redis --site=antaa.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.antaa.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.antaa.fi --deltahours=50
+
+bin/contents_feeder_redis --site=nussi.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.nussi.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.nussi.fi --deltahours=50
+
+bin/contents_feeder_redis --site=peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.peniksen.fi --deltahours=50
 
 
-bin/contents_feeder_redis --site=sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi --deltahours=50
+
+
+
+bin/contents_feeder_redis --site=peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.peniksen.fi --deltahours=50
 
 
 
