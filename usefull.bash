@@ -136,10 +136,6 @@ bin/contents_feeder_redis --site=peniksen.fi --deltahours=50 && sleep 90 && bin/
 
 bin/contents_feeder_redis --site=seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksiverkko.fi --deltahours=50
 
-bin/contents_feeder_redis --site=miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.miehen.fi --deltahours=50
-
-bin/contents_feeder_redis --site=kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kiima.fi --deltahours=50
-
 
 
 #common41ang
@@ -150,8 +146,9 @@ bin/contents_feeder_redis --site=pippeli.fi --deltahours=50 && sleep 90 && bin/c
 
 bin/contents_feeder_redis --site=seksitarina.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksitarina.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksitarina.fi --deltahours=50
 
+bin/contents_feeder_redis --site=kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kiima.fi --deltahours=50
 
-
+bin/contents_feeder_redis --site=miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.miehen.fi --deltahours=50
 
 
 
