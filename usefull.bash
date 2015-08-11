@@ -1,3 +1,5 @@
+vm.overcommit_memory=1 in /etc/sysctl.conf !!!
+
 GOPATH=$GOPATH:/home/juno/git/imagehoster_redis go test -v
 
 
@@ -138,6 +140,12 @@ bin/contents_feeder_redis --site=miehen.fi --deltahours=50 && sleep 90 && bin/co
 
 bin/contents_feeder_redis --site=kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.kiima.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.kiima.fi --deltahours=50
 
+
+
+#common41ang
+
+
+
 bin/contents_feeder_redis --site=pippeli.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.pippeli.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.pippeli.fi --deltahours=50
 
 bin/contents_feeder_redis --site=seksitarina.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksitarina.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksitarina.fi --deltahours=50
@@ -145,9 +153,7 @@ bin/contents_feeder_redis --site=seksitarina.fi --deltahours=50 && sleep 90 && b
 
 
 
+
+
+
 bin/contents_feeder_redis --site=sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi --deltahours=50
-
-
-
-
-
