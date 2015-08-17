@@ -143,6 +143,13 @@ bin/contents_feeder_redis --site=peniksen.fi --deltahours=50 && sleep 90 && bin/
 bin/contents_feeder_redis --site=seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksiverkko.fi --deltahours=50
 
 
+bin/contents_feeder_redis --site=pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.pillukuvat.fi --deltahours=50
+
+bin/contents_feeder_redis --site=omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.omakuva.fi --deltahours=50
+
+bin/contents_feeder_redis --site=seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksifilmit.fi --deltahours=50
+
+
 
 
 
