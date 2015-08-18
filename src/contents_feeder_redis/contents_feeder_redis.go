@@ -3,13 +3,10 @@ package main
 import (
 	"database/sql"
 	"flag"
-	//	"domains"
 	"github.com/garyburd/redigo/redis"
 	_ "github.com/go-sql-driver/mysql"
-	//	"log/syslog"
 	"fmt"
 	"startones"
-	//    "domains"
 	"contents_feeder_redis/find_adv_phone"
 	"contents_feeder_redis/find_all_img"
 	"contents_feeder_redis/find_names"
@@ -17,7 +14,7 @@ import (
 )
 
 var siteFlag = flag.String("site", "", "must be test.com www.test.com")
-var deltahoursFlag = flag.Int("deltahours", 0, " > 0")
+//var deltahoursFlag = flag.Int("deltahours", 0, " > 0")
 
 func main() {
 	flag.Parse() // Scan the arguments list
@@ -42,9 +39,9 @@ func main() {
 	defer c.Close()
 
 	site := *siteFlag
-	deltahours := *deltahoursFlag
+//	deltahours := *deltahoursFlag
 
-	if site != "" && deltahours > 0 {
+	if site != ""  {
 
 		names := find_names.FindAll(golog, *db)
 		phones := find_adv_phone.FindAll(golog, *db)
@@ -60,11 +57,12 @@ func main() {
 
 		ch.Find_free_paragraph(golog, c, "fi_FI", "porno")
 
-		ch.Create_local_charters(golog, site, deltahours)
+//		ch.Create_local_charters(golog, site, deltahours)
+		ch.Create_local_charters(golog, site)
 
 	} else {
 
-		fmt.Println("Need paramater --site=wwww.test.com --deltahours=240")
+		fmt.Println("Need paramater --site=wwww.test.com ")
 
 	}
 

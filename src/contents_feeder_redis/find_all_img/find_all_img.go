@@ -120,7 +120,7 @@ func (characters *Characters) Find_free_paragraph(golog syslog.Writer, c redis.C
 
 		characters.CharactersRedis[i].Moto = paragraph.Ptitle
 
-		s := []string{paragraph.Pphrase, paragraph.Sentences[0], paragraph.Sentences[1], paragraph.Sentences[2], paragraph.Sentences[3], paragraph.Sentences[4]}
+		s := []string{paragraph.Pphrase, paragraph.Sentences[0], paragraph.Sentences[1], paragraph.Sentences[2], paragraph.Sentences[3], paragraph.Sentences[4],paragraph.Sentences[5]}
 		description := strings.Join(s, " ")
 		characters.CharactersRedis[i].Description = description
 
@@ -128,7 +128,7 @@ func (characters *Characters) Find_free_paragraph(golog syslog.Writer, c redis.C
 
 }
 
-func (characters *Characters) Create_local_charters(golog syslog.Writer, site string,deltahours int) {
+func (characters *Characters) Create_local_charters(golog syslog.Writer, site string) {
 
 	c, err := redis.Dial("tcp", ":6379")
 	if err != nil {
@@ -141,7 +141,8 @@ func (characters *Characters) Create_local_charters(golog syslog.Writer, site st
 	for i, _ := range characters.CharactersRedis {
 
 		character := characters.CharactersRedis[i]				
-		insert_local_redis.InsertCharacter(golog,c,site,character,deltahours)
+//		insert_local_redis.InsertCharacter(golog,c,site,character,deltahours)
+		insert_local_redis.InsertCharacter(golog,c,site,character)
 	}
 
 }

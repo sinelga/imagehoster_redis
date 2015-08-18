@@ -3,13 +3,14 @@ package insert_local_redis
 import (
 	"domains"
 	"encoding/json"
-	"fmt"
+//	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"log/syslog"
-	"time"
+//	"time"
 )
 
-func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis, deltahours int) {
+//func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis, deltahours int) {
+	func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis) {		
 
 	update_insert := false
 	
@@ -43,24 +44,24 @@ func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character do
 				}
 				
 				
-				create_at := characterold.Created_at
+//				create_at := characterold.Created_at
 
-				delta := time.Now().Sub(create_at)
+//				delta := time.Now().Sub(create_at)
 
-				fmt.Println(delta.Minutes())
+//				fmt.Println(delta.Minutes())
 
-				deltahours64 := float64(deltahours)
+//				deltahours64 := float64(deltahours)
+//
+//				if delta.Minutes() > deltahours64 {
 
-				if delta.Minutes() > deltahours64 {
-
-					update_insert = true
+//					update_insert = true
 
 					character.Name = characterold.Name
 					character.Age = characterold.Age
 					character.Phone = characterold.Phone
 					character.City = characterold.City
 
-				}
+//				}
 
 			}
 

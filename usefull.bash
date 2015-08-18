@@ -141,16 +141,18 @@ bin/contents_feeder_redis --site=seksitarina.fi --deltahours=50 && sleep 90 && b
 bin/contents_feeder_redis --site=miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.miehen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.miehen.fi --deltahours=50
 bin/contents_feeder_redis --site=peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.peniksen.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.peniksen.fi --deltahours=50
 bin/contents_feeder_redis --site=seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksiverkko.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksiverkko.fi --deltahours=50
-
-
 bin/contents_feeder_redis --site=pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.pillukuvat.fi --deltahours=50
-
 bin/contents_feeder_redis --site=omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.omakuva.fi --deltahours=50
-
 bin/contents_feeder_redis --site=seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksifilmit.fi --deltahours=50
 
 
+bin/contents_feeder_redis --site=vitun.fi && sleep 90 && bin/contents_feeder_redis --site=www.vitun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vitun.fi
+
+bin/contents_feeder_redis --site=siskon.fi && sleep 90 && bin/contents_feeder_redis --site=www.siskon.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siskon.fi
+
+bin/contents_feeder_redis --site=pillusta.fi && sleep 90 && bin/contents_feeder_redis --site=www.pillusta.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pillusta.fi
 
 
 
 bin/contents_feeder_redis --site=sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi --deltahours=50
+bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
