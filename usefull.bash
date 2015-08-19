@@ -144,15 +144,17 @@ bin/contents_feeder_redis --site=seksiverkko.fi --deltahours=50 && sleep 90 && b
 bin/contents_feeder_redis --site=pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.pillukuvat.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.pillukuvat.fi --deltahours=50
 bin/contents_feeder_redis --site=omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.omakuva.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.omakuva.fi --deltahours=50
 bin/contents_feeder_redis --site=seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.seksifilmit.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.seksifilmit.fi --deltahours=50
-
-
 bin/contents_feeder_redis --site=vitun.fi && sleep 90 && bin/contents_feeder_redis --site=www.vitun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vitun.fi
-
 bin/contents_feeder_redis --site=siskon.fi && sleep 90 && bin/contents_feeder_redis --site=www.siskon.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siskon.fi
-
 bin/contents_feeder_redis --site=pillusta.fi && sleep 90 && bin/contents_feeder_redis --site=www.pillusta.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pillusta.fi
 
 
+bin/contents_feeder_redis --site=paljas.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljas.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljas.fi
 
-bin/contents_feeder_redis --site=sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi --deltahours=50 && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi --deltahours=50
+bin/contents_feeder_redis --site=panokoulu.fi && sleep 90 && bin/contents_feeder_redis --site=www.panokoulu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panokoulu.fi
+
+bin/contents_feeder_redis --site=naisseuraa.fi && sleep 90 && bin/contents_feeder_redis --site=www.naisseuraa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naisseuraa.fi
+
+
+
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
