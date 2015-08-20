@@ -141,7 +141,6 @@ func (characters *Characters) Create_local_charters(golog syslog.Writer, site st
 	for i, _ := range characters.CharactersRedis {
 
 		character := characters.CharactersRedis[i]				
-//		insert_local_redis.InsertCharacter(golog,c,site,character,deltahours)
 		insert_local_redis.InsertCharacter(golog,c,site,character)
 	}
 

@@ -39,13 +39,6 @@ type Config struct {
 	}
 }
 
-//type Chat struct {
-//
-//	Status string `json: "status"`
-//	Known string `json: "known"`
-//	Answer string `json: "answer"`
-//
-//}
 
 type Character struct {
 	Id               int
@@ -66,6 +59,7 @@ type Character struct {
 	Img_content_type string
 	Img_file_size    int
 	Img_updated_at   time.Time
+	Keyword          string
 }
 
 type CharacterRedis struct {

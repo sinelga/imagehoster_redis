@@ -2,8 +2,6 @@ package find_names
 
 import (
 	"database/sql"
-//	"domains"
-//	_ "github.com/go-sql-driver/mysql"
 	"log/syslog"
 )
 
