@@ -59,7 +59,7 @@ type Character struct {
 	Img_content_type string
 	Img_file_size    int
 	Img_updated_at   time.Time
-	Keyword          string
+//	Keyword          string
 }
 
 type CharacterRedis struct {
@@ -74,6 +74,7 @@ type CharacterRedis struct {
 	Phone         string
 	Created_at    time.Time
 	Img_file_name string
+	Keyword          string
 }
 
 type Paragraph struct {

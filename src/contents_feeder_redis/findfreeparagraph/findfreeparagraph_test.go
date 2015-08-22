@@ -16,6 +16,7 @@ func TestFindFromQ(t *testing.T) {
 		log.Fatal("error writing syslog!!")
 	}
 	
+	
 	unmarPar :=FindFromQ(*golog,"fi_FI","porno")
 	
 //	fmt.Println(unmarPar)

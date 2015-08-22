@@ -53,11 +53,12 @@ func (characters *Characters) Find_all_img(dir string) {
 
 }
 
-func (characters *Characters) Add_name_phone_region(golog syslog.Writer, names []string, phones []string, regions []string) {
+func (characters *Characters) Add_name_phone_region_keyword(golog syslog.Writer, names []string, phones []string, regions []string,keywords map[int]string) {
 
 	names_quant := len(names)
 	phones_quant := len(phones)
 	regions_quant := len(regions)
+	keywords_quant :=len(keywords)
 
 	rand.Seed(time.Now().UTC().UnixNano())
 
@@ -68,11 +69,13 @@ func (characters *Characters) Add_name_phone_region(golog syslog.Writer, names [
 		int_name := rand.Intn(names_quant)
 		int_phone := rand.Intn(phones_quant)
 		int_ragions := rand.Intn(regions_quant)
+		int_keyword := rand.Intn(keywords_quant)
 
 		characters.CharactersRedis[i].Name = names[int_name]
 		characters.CharactersRedis[i].Phone = phones[int_phone]
 		characters.CharactersRedis[i].City = regions[int_ragions]
 		characters.CharactersRedis[i].Created_at = now
+		characters.CharactersRedis[i].Keyword = keywords[int_keyword] 
 
 	}
 

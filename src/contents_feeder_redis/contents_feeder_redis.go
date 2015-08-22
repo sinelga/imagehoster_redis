@@ -11,6 +11,7 @@ import (
 	"contents_feeder_redis/find_all_img"
 	"contents_feeder_redis/find_names"
 	"contents_feeder_redis/find_regions"
+	"contents_feeder_redis/find_all_keywords"
 )
 
 var siteFlag = flag.String("site", "", "must be test.com www.test.com")
@@ -44,12 +45,13 @@ func main() {
 		names := find_names.FindAll(golog, *db)
 		phones := find_adv_phone.FindAll(golog, *db)
 		regions := find_regions.FindAll(golog, *db)
+		keywords := find_all_keywords.FindAllKeywords(golog,c,"fi_FI","porno")
 
 		var ch find_all_img.Characters
 		//
 		ch.Find_all_img("/home/juno/git/imagehoster_redis/upload/img")
 
-		ch.Add_name_phone_region(golog, names, phones, regions)
+		ch.Add_name_phone_region_keyword(golog, names, phones, regions,keywords)
 
 		ch.Find_age(golog, *db)
 
