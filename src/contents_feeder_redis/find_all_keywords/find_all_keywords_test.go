@@ -30,12 +30,14 @@ func TestFindAllKeywords(t *testing.T) {
 
 	keywords := FindAllKeywords(*golog, c, "fi_FI", "porno")
 
-	fmt.Println("len", len(keywords))
+	
 
 	for i, keyword := range keywords {
 
 		fmt.Println(i, keyword)
 
 	}
+	
+	fmt.Println("len", len(keywords))
 
 }

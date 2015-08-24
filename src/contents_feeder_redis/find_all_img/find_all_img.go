@@ -11,7 +11,7 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-	"strconv"
+//	"strconv"
 	"strings"
 	"time"
 )
@@ -44,9 +44,10 @@ func (characters *Characters) Find_all_img(dir string) {
 
 		var character domains.CharacterRedis
 
-		character.Img_file_name = imgfile[1]
-		idint, _ := strconv.Atoi(imgfile[0])
-		character.Id = idint
+//		imgidint, _ := strconv.Atoi(imgfile[0])
+		character.Img_file_name =imgfile[0]+"/"+ imgfile[1]
+//		idint, _ := strconv.Atoi(imgfile[0])
+//		character.Id = idint
 		characters.CharactersRedis = append(characters.CharactersRedis, character)
 
 	}
@@ -58,7 +59,7 @@ func (characters *Characters) Add_name_phone_region_keyword(golog syslog.Writer,
 	names_quant := len(names)
 	phones_quant := len(phones)
 	regions_quant := len(regions)
-	keywords_quant :=len(keywords)
+//	keywords_quant :=len(keywords)
 
 	rand.Seed(time.Now().UTC().UnixNano())
 
@@ -69,13 +70,14 @@ func (characters *Characters) Add_name_phone_region_keyword(golog syslog.Writer,
 		int_name := rand.Intn(names_quant)
 		int_phone := rand.Intn(phones_quant)
 		int_ragions := rand.Intn(regions_quant)
-		int_keyword := rand.Intn(keywords_quant)
+//		int_keyword := rand.Intn(keywords_quant)
 
+		characters.CharactersRedis[i].Id = keywords[i]
 		characters.CharactersRedis[i].Name = names[int_name]
 		characters.CharactersRedis[i].Phone = phones[int_phone]
 		characters.CharactersRedis[i].City = regions[int_ragions]
 		characters.CharactersRedis[i].Created_at = now
-		characters.CharactersRedis[i].Keyword = keywords[int_keyword] 
+//		characters.CharactersRedis[i].Keyword = keywords[int_keyword] 
 
 	}
 
@@ -85,7 +87,8 @@ func (characters *Characters) Find_age(golog syslog.Writer, db sql.DB) {
 
 	for i, _ := range characters.CharactersRedis {
 
-		sqlstr := "select age,sex from characters where id=" + strconv.Itoa(characters.CharactersRedis[i].Id)
+//		sqlstr := "select age,sex from characters where id=" + strconv.Itoa(characters.CharactersRedis[i].Id)
+		sqlstr := "select age,sex from characters where id=" +"\""+ characters.CharactersRedis[i].Id+"\""
 
 		if rows, err := db.Query(sqlstr); err != nil {
 			golog.Crit(err.Error())

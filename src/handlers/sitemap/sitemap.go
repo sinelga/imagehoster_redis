@@ -13,7 +13,7 @@ import (
 	"net/url"
 	"os"
 	"sitemap_maker/getLinks"
-	"strconv"
+//	"strconv"
 	"strings"
 	"time"
 )
@@ -62,7 +62,8 @@ func CheckGenerate(golog syslog.Writer, w http.ResponseWriter, site string) {
 			}
 
 			permlink := strings.Split(characters[i].Moto, " ")
-			Url.Path += "/" + strconv.Itoa(characters[i].Id) + "/" + permlink[0] + "-" + permlink[1] + ".html"
+//			Url.Path += "/" + strconv.Itoa(characters[i].Id) + "/" + permlink[0] + "-" + permlink[1] + ".html"
+			Url.Path += "/" + characters[i].Id + "/" + permlink[0] + "-" + permlink[1] + ".html"
 
 			doc := new(domains.Page)
 			doc.Loc = Url.String()

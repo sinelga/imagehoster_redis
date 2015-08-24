@@ -10,7 +10,7 @@ import (
 	//	"fmt"
 	"encoding/xml"
 	"startones"
-	"strconv"
+//	"strconv"
 	"strings"
 
 	"sitemap_maker/getLinks"
@@ -50,7 +50,8 @@ func main() {
 		}
 		
 		permlink :=strings.Split(characters[i].Moto," ")
-		Url.Path += "/"+ strconv.Itoa(characters[i].Id) + "/" +permlink[0]+"-"+permlink[1]+".html"
+//		Url.Path += "/"+ strconv.Itoa(characters[i].Id) + "/" +permlink[0]+"-"+permlink[1]+".html"
+		Url.Path += "/"+ characters[i].Id + "/" +permlink[0]+"-"+permlink[1]+".html"
 		
 		doc := new(domains.Page)
 		doc.Loc = Url.String()
@@ -60,7 +61,6 @@ func main() {
 		docList.Pages = append(docList.Pages, doc)
 		
 	}
-
 
 	resultXml, err := xml.MarshalIndent(docList, "", "  ")
 	if err != nil {

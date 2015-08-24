@@ -63,7 +63,7 @@ type Character struct {
 }
 
 type CharacterRedis struct {
-	Id            int
+	Id            string
 	Name          string
 	Age           int
 	Sex           string
@@ -74,7 +74,7 @@ type CharacterRedis struct {
 	Phone         string
 	Created_at    time.Time
 	Img_file_name string
-	Keyword          string
+//	Keyword          string
 }
 
 type Paragraph struct {
