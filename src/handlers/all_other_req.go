@@ -8,7 +8,7 @@ import (
 	"handlers/sitemap"
 	"net/http"
 	"startones"
-	"strconv"
+//	"strconv"
 	"strings"
 )
 
@@ -85,7 +85,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			if len(id_arr) > 0 {
 
-				if _, err := strconv.Atoi(id_arr[1]); err == nil {
+//				if _, err := strconv.Atoi(id_arr[1]); err == nil {
 
 					golog.Info("Only control on exist ")
 					_, exist := getOne.GetById(golog, rds, site, id_arr[1])
@@ -97,7 +97,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 					}
 
-				}
+//				}
 
 			}
 
