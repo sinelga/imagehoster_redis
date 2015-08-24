@@ -9,7 +9,6 @@ import (
 //	"time"
 )
 
-//func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis, deltahours int) {
 	func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis) {		
 
 	update_insert := false

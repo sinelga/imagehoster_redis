@@ -87,8 +87,12 @@ func (characters *Characters) Find_age(golog syslog.Writer, db sql.DB) {
 
 	for i, _ := range characters.CharactersRedis {
 
+
+		imgidstr := strings.Split(characters.CharactersRedis[i].Img_file_name,"/")
+
 //		sqlstr := "select age,sex from characters where id=" + strconv.Itoa(characters.CharactersRedis[i].Id)
-		sqlstr := "select age,sex from characters where id=" +"\""+ characters.CharactersRedis[i].Id+"\""
+		sqlstr := "select age,sex from characters where id="+imgidstr[0]
+		golog.Info("Find_age "+sqlstr )
 
 		if rows, err := db.Query(sqlstr); err != nil {
 			golog.Crit(err.Error())

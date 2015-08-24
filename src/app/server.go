@@ -1,7 +1,7 @@
 package main
 
 import (
-	//	"net/http"
+
 	"github.com/rs/cors"
 	"github.com/zenazn/goji"
 	"handlers"
