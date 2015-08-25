@@ -160,7 +160,8 @@ func main() {
 					slug.MaxLength = 20
 					slugresalt := slug.Make(character.Description)
 
-					Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
+//					Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
+					Url.Path += "/" + character.Id + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
 
 //					fmt.Println(Url.String())
 					doc := new(domains.Page)

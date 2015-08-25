@@ -41,7 +41,7 @@ type Config struct {
 
 
 type Character struct {
-	Id               int
+	Id               string
 	Name             string
 	Age              int
 	Moto             string
@@ -56,6 +56,7 @@ type Character struct {
 	Created_at       time.Time
 	Updated_at       time.Time
 	Img_file_name    string
+	ImgId		  int
 	Img_content_type string
 	Img_file_size    int
 	Img_updated_at   time.Time
@@ -73,6 +74,7 @@ type CharacterRedis struct {
 	Region        string
 	Phone         string
 	Created_at    time.Time
+	ImgId		  int	
 	Img_file_name string
 //	Keyword          string
 }

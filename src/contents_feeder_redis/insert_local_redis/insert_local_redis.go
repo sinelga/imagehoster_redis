@@ -43,17 +43,6 @@ import (
 				}
 				
 				
-//				create_at := characterold.Created_at
-
-//				delta := time.Now().Sub(create_at)
-
-//				fmt.Println(delta.Minutes())
-
-//				deltahours64 := float64(deltahours)
-//
-//				if delta.Minutes() > deltahours64 {
-
-//					update_insert = true
 
 					character.Name = characterold.Name
 					character.Age = characterold.Age

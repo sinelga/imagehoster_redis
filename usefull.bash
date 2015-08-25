@@ -1,3 +1,9 @@
+mysqldump weber_production --order-by-primary --compress --single-transaction --skip-triggers -uasterisk -p >weber_production.db
+echo 'drop database weber_production' |mysql -uasterisk -p
+echo 'create database weber_production' |mysql -uasterisk -p
+cat weber_production.db |mysql -uasterisk -p weber_production
+
+
 vm.overcommit_memory=1 in /etc/sysctl.conf !!!
 
 GOPATH=$GOPATH:/home/juno/git/imagehoster_redis go test -v
