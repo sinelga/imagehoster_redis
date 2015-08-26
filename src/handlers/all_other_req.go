@@ -87,7 +87,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 //				if _, err := strconv.Atoi(id_arr[1]); err == nil {
 
-					golog.Info("Only control on exist ")
+//					golog.Info("Only control on exist ")
 					_, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
 					if exist {
@@ -107,7 +107,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	} else {
 
-		golog.Err("variant NOT found!!!")
+//		golog.Err("variant NOT found!!!")
 		
 		
 		if strings.HasPrefix(path, "/robots.txt") {

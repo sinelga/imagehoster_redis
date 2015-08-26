@@ -161,8 +161,18 @@ bin/contents_feeder_redis --site=naisseuraa.fi && sleep 90 && bin/contents_feede
 #common42ang
 bin/contents_feeder_redis --site=sperma.fi && sleep 90 && bin/contents_feeder_redis --site=www.sperma.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sperma.fi
 
+bin/contents_feeder_redis --site=pimpin.fi && sleep 90 && bin/contents_feeder_redis --site=www.pimpin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pimpin.fi
+
+bin/contents_feeder_redis --site=haluaa.fi && sleep 90 && bin/contents_feeder_redis --site=www.haluaa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.haluaa.fi
+
+bin/contents_feeder_redis --site=kauniita.fi && sleep 90 && bin/contents_feeder_redis --site=www.kauniita.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kauniita.fi
+
+
 
 
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
+
+
+
 
 

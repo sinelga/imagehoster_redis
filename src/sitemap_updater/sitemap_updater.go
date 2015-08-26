@@ -151,8 +151,8 @@ func main() {
 				}
 
 				character, _ := getOne.GetById(*golog, rds, site, strconv.Itoa(k))
+				//				character, _ := getOne.GetById(*golog, rds, site, k)
 
-				//				golog.Info("character.Moto " + character.Moto)
 				if character.Sex == "female" {
 
 					permlink := strings.Split(character.Moto, " ")
@@ -160,10 +160,10 @@ func main() {
 					slug.MaxLength = 20
 					slugresalt := slug.Make(character.Description)
 
-//					Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
+					//					Url.Path += "/" + strconv.Itoa(character.Id) + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
 					Url.Path += "/" + character.Id + "/" + permlink[0] + "-" + permlink[1] + "-" + slugresalt + ".html"
 
-//					fmt.Println(Url.String())
+					//					fmt.Println(Url.String())
 					doc := new(domains.Page)
 					doc.Loc = Url.String()
 					doc.Lastmod = time.Now().Format(time.RFC3339)
