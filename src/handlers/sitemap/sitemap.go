@@ -37,7 +37,7 @@ func CheckGenerate(golog syslog.Writer, w http.ResponseWriter, site string) {
 
 		golog.Info(filestr + "  NOT exist")
 
-		limit := random(400, 700)
+		limit := random(1000, 1700)
 
 		c, err := redis.Dial("tcp", ":6379")
 		if err != nil {

@@ -158,19 +158,28 @@ bin/contents_feeder_redis --site=panokoulu.fi && sleep 90 && bin/contents_feeder
 bin/contents_feeder_redis --site=naisseuraa.fi && sleep 90 && bin/contents_feeder_redis --site=www.naisseuraa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naisseuraa.fi
 
 
-#common42ang
+#common42ang only from 15 vertion 
 bin/contents_feeder_redis --site=sperma.fi && sleep 90 && bin/contents_feeder_redis --site=www.sperma.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sperma.fi
-
 bin/contents_feeder_redis --site=pimpin.fi && sleep 90 && bin/contents_feeder_redis --site=www.pimpin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pimpin.fi
-
 bin/contents_feeder_redis --site=haluaa.fi && sleep 90 && bin/contents_feeder_redis --site=www.haluaa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.haluaa.fi
-
 bin/contents_feeder_redis --site=kauniita.fi && sleep 90 && bin/contents_feeder_redis --site=www.kauniita.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kauniita.fi
 
 
 
 
+bin/contents_feeder_redis --site=kullin.fi && sleep 90 && bin/contents_feeder_redis --site=www.kullin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kullin.fi
+
+bin/contents_feeder_redis --site=pilluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideot.fi
+
+bin/contents_feeder_redis --site=tissikuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.tissikuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tissikuvat.fi
+
+bin/contents_feeder_redis --site=erotiikkaa.fi && sleep 90 && bin/contents_feeder_redis --site=www.erotiikkaa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.erotiikkaa.fi
+
+
+
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
+
+
 
 
 

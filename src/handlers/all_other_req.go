@@ -85,9 +85,6 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			if len(id_arr) > 0 {
 
-//				if _, err := strconv.Atoi(id_arr[1]); err == nil {
-
-//					golog.Info("Only control on exist ")
 					_, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
 					if exist {
@@ -96,8 +93,6 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 //						http.ServeFile(w, r, "/home/juno/git/"+variant+"_fi_FI_desk_mobile/dist/index.html")
 
 					}
-
-//				}
 
 			}
 
