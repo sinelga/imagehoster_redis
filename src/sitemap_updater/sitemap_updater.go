@@ -15,9 +15,10 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
-	"strconv"
+//	"strconv"
 	"strings"
 	"time"
+	"sitemap_updater/getAllIndexFromRedis"
 )
 
 const APP_VERSION = "0.1"
@@ -47,36 +48,61 @@ func main() {
 	}
 	defer rds.Close()
 
-	files, _ := filepath.Glob("upload/img/*")
+//	files, _ := filepath.Glob("upload/img/*")
 
-	set_all_id := make(map[int]struct{})
+//	set_all_id := make(map[string]struct{})
 
-	for _, f := range files {
+//	for _, f := range files {
 
-		if intid, err := strconv.Atoi(strings.Split(f, "/")[2]); err != nil {
+////		if intid, err := strconv.Atoi(strings.Split(f, "/")[2]); err != nil {
+//		
+//
+//			fmt.Println(err.Error())
+//
+//		} else {
+//
+//			set_all_id[intid] = struct{}{}
+//
+//		}
 
-			fmt.Println(err.Error())
+//			intid := strings.Split(f, "/")[2]
+			
+//			fmt.Println(intid)
+			
+			
+//			set_all_id[intid] = struct{}{}
 
-		} else {
+//	}
 
-			set_all_id[intid] = struct{}{}
+//	fmt.Println("img num", len(files))
 
-		}
+//	allindexes := 
 
-	}
 
-	fmt.Println("img num", len(files))
 
 	mapfiles, _ := filepath.Glob("maps/*")
 
 	for _, f := range mapfiles {
 
-		fmt.Println(f)
+//		fmt.Println(f)
 
 		site := strings.Split(f, "_")[1]
+		
+		
 
 		site = strings.TrimSuffix(site, ".xml")
-		fmt.Println(site)
+		fmt.Println("site->",site)
+		
+		set_all_id := make(map[string]struct{})
+		
+		allsitekeywordsid := getAllIndexFromRedis.GetAllIndexForSite(*golog, rds, site)
+		
+		for _,keywordid :=range allsitekeywordsid {
+			
+			set_all_id[keywordid] = struct{}{}
+			
+		}
+				
 
 		xmlFile, err := os.Open(f)
 
@@ -91,25 +117,34 @@ func main() {
 		var pages domains.Pages
 		xml.Unmarshal(XMLdata, &pages)
 
-		set_id_insitemap := make(map[int]struct{})
+//		set_id_insitemap := make(map[int]struct{})
+		set_id_insitemap := make(map[string]struct{})
 
 		for _, page := range pages.Pages {
 
-			if intid, err := strconv.Atoi(strings.Split(page.Loc, "/")[3]); err != nil {
+//			if intid, err := strconv.Atoi(strings.Split(page.Loc, "/")[3]); err != nil {
+//			if intid, err := strings.Split(page.Loc, "/")[3]; err != nil {
+//
+//				fmt.Println(err.Error())
+//
+//			} else {
+//
+//				set_id_insitemap[intid] = struct{}{}
+//
+//			}
 
-				fmt.Println(err.Error())
-
-			} else {
-
-				set_id_insitemap[intid] = struct{}{}
-
-			}
+			intid := strings.Split(page.Loc, "/")[3]
+//			fmt.Println(intid)
+			set_id_insitemap[intid] = struct{}{}
+			
+			
 
 		}
 
 		fmt.Println("pages num", len(pages.Pages))
 
-		set_free_id := make(map[int]struct{})
+//		set_free_id := make(map[int]struct{})
+		set_free_id := make(map[string]struct{})
 
 		for k := range set_all_id {
 
@@ -123,9 +158,9 @@ func main() {
 
 		fmt.Println("freeid", len(set_free_id))
 
-		var id_to_add []int
+		var id_to_add []string
 
-		if len(set_free_id) > 10 {
+		if len(set_free_id) > 20 {
 
 			i := 0
 
@@ -135,7 +170,7 @@ func main() {
 
 				id_to_add = append(id_to_add, k)
 
-				if i >= 10 {
+				if i >= 20 {
 					break
 				}
 
@@ -150,7 +185,7 @@ func main() {
 					golog.Crit(err.Error())
 				}
 
-				character, _ := getOne.GetById(*golog, rds, site, strconv.Itoa(k))
+				character, _ := getOne.GetById(*golog, rds, site, k)
 				//				character, _ := getOne.GetById(*golog, rds, site, k)
 
 				if character.Sex == "female" {
