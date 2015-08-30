@@ -167,13 +167,13 @@ bin/contents_feeder_redis --site=kullin.fi && sleep 90 && bin/contents_feeder_re
 bin/contents_feeder_redis --site=pilluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideot.fi
 bin/contents_feeder_redis --site=tissikuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.tissikuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tissikuvat.fi
 bin/contents_feeder_redis --site=erotiikkaa.fi && sleep 90 && bin/contents_feeder_redis --site=www.erotiikkaa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.erotiikkaa.fi
-
-
 bin/contents_feeder_redis --site=kertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=www.kertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kertomukset.fi
-
 bin/contents_feeder_redis --site=ilmaisporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.ilmaisporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.ilmaisporno.fi
-
 bin/contents_feeder_redis --site=pornotuubi.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornotuubi.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornotuubi.fi
+
+
+
+bin/contents_feeder_redis --site=panovideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.panovideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panovideo.fi
 
 
 
