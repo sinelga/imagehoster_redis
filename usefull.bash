@@ -170,10 +170,13 @@ bin/contents_feeder_redis --site=erotiikkaa.fi && sleep 90 && bin/contents_feede
 bin/contents_feeder_redis --site=kertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=www.kertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kertomukset.fi
 bin/contents_feeder_redis --site=ilmaisporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.ilmaisporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.ilmaisporno.fi
 bin/contents_feeder_redis --site=pornotuubi.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornotuubi.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornotuubi.fi
-
-
-
 bin/contents_feeder_redis --site=panovideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.panovideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panovideo.fi
+
+
+#common43ang only from 15 vertion
+bin/contents_feeder_redis --site=nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuolee.fi
+
+bin/contents_feeder_redis --site=nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuolee.fi
 
 
 
