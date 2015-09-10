@@ -176,16 +176,22 @@ bin/contents_feeder_redis --site=panovideo.fi && sleep 90 && bin/contents_feeder
 #common43ang only from 15 vertion
 bin/contents_feeder_redis --site=nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuolee.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuolee.fi
 bin/contents_feeder_redis --site=karvapillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.karvapillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.karvapillu.fi
-
-
 bin/contents_feeder_redis --site=pillussa.fi && sleep 90 && bin/contents_feeder_redis --site=www.pillussa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pillussa.fi
-
 bin/contents_feeder_redis --site=tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=www.tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tiukka.fi
+
+
+
+bin/contents_feeder_redis --site=teen.fi && sleep 90 && bin/contents_feeder_redis --site=www.teen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teen.fi
+
+bin/contents_feeder_redis --site=astutus.fi && sleep 90 && bin/contents_feeder_redis --site=www.astutus.fi && sleep 90 && bin/contents_feeder_redis --site=chat.astutus.fi
 
 
 
 
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
+
+
+
 
 
 
