@@ -178,13 +178,13 @@ bin/contents_feeder_redis --site=nuolee.fi && sleep 90 && bin/contents_feeder_re
 bin/contents_feeder_redis --site=karvapillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.karvapillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.karvapillu.fi
 bin/contents_feeder_redis --site=pillussa.fi && sleep 90 && bin/contents_feeder_redis --site=www.pillussa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pillussa.fi
 bin/contents_feeder_redis --site=tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=www.tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tiukka.fi
-
-
-
 bin/contents_feeder_redis --site=teen.fi && sleep 90 && bin/contents_feeder_redis --site=www.teen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teen.fi
-
 bin/contents_feeder_redis --site=astutus.fi && sleep 90 && bin/contents_feeder_redis --site=www.astutus.fi && sleep 90 && bin/contents_feeder_redis --site=chat.astutus.fi
 
+
+bin/contents_feeder_redis --site=pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pikkupillu.fi
+
+bin/contents_feeder_redis --site=transu.fi && sleep 90 && bin/contents_feeder_redis --site=www.transu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.transu.fi
 
 
 
