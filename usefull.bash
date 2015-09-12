@@ -73,15 +73,6 @@ bin/contents_feeder_redis --site=www.nuori.co --deltahours=50 #remake
 bin/contents_feeder_redis --site=nuori.co --deltahours=50 #remake
 bin/contents_feeder_redis --site=chat.nuori.co --deltahours=50 
 
-bin/contents_feeder_redis --site=www.allfreexxx.com --deltahours=50 #remake
-bin/contents_feeder_redis --site=allfreexxx.com --deltahours=50 #remake
-bin/contents_feeder_redis --site=chat.allfreexxx.com --deltahours=50 #remake
-
-
-bin/contents_feeder_redis --site=www.klickhere.mobi --deltahours=50 #remake
-bin/contents_feeder_redis --site=klickhere.mobi --deltahours=50 #remake
-bin/contents_feeder_redis --site=chat.klickhere.mobi --deltahours=50 #remake
-
 bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50 #remake
 bin/contents_feeder_redis --site=bestsex.cc --deltahours=50 #remake
 bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50 #remake
@@ -180,11 +171,14 @@ bin/contents_feeder_redis --site=pillussa.fi && sleep 90 && bin/contents_feeder_
 bin/contents_feeder_redis --site=tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=www.tiukka.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tiukka.fi
 bin/contents_feeder_redis --site=teen.fi && sleep 90 && bin/contents_feeder_redis --site=www.teen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teen.fi
 bin/contents_feeder_redis --site=astutus.fi && sleep 90 && bin/contents_feeder_redis --site=www.astutus.fi && sleep 90 && bin/contents_feeder_redis --site=chat.astutus.fi
-
-
 bin/contents_feeder_redis --site=pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pikkupillu.fi
-
 bin/contents_feeder_redis --site=transu.fi && sleep 90 && bin/contents_feeder_redis --site=www.transu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.transu.fi
+
+
+
+bin/contents_feeder_redis --site=allfreexxx.com && sleep 90 && bin/contents_feeder_redis --site=www.allfreexxx.com && sleep 90 && bin/contents_feeder_redis --site=chat.allfreexxx.com
+
+bin/contents_feeder_redis --site=klickhere.mobi && sleep 90 && bin/contents_feeder_redis --site=www.klickhere.mobi && sleep 90 && bin/contents_feeder_redis --site=chat.klickhere.mobi
 
 
 
