@@ -73,9 +73,6 @@ bin/contents_feeder_redis --site=www.nuori.co --deltahours=50 #remake
 bin/contents_feeder_redis --site=nuori.co --deltahours=50 #remake
 bin/contents_feeder_redis --site=chat.nuori.co --deltahours=50 
 
-bin/contents_feeder_redis --site=www.bestsex.cc --deltahours=50 #remake
-bin/contents_feeder_redis --site=bestsex.cc --deltahours=50 #remake
-bin/contents_feeder_redis --site=chat.bestsex.cc --deltahours=50 #remake
 
 bin/contents_feeder_redis --site=www.rouvat.fi --deltahours=50 #remake
 bin/contents_feeder_redis --site=rouvat.fi --deltahours=50 #remake
@@ -85,9 +82,6 @@ bin/contents_feeder_redis --site=www.vittuja.fi --deltahours=50 #remake
 bin/contents_feeder_redis --site=vittuja.fi --deltahours=50 #remake
 bin/contents_feeder_redis --site=chat.vittuja.fi --deltahours=50 #remake
 
-bin/contents_feeder_redis --site=www.mostpopularsites.org --deltahours=50 #remake
-bin/contents_feeder_redis --site=mostpopularsites.org --deltahours=50 #remake
-bin/contents_feeder_redis --site=chat.mostpopularsites.org --deltahours=50 #remake
 
 #common39ang
 bin/contents_feeder_redis --site=www.pornocopia.net --deltahours=50 #remake
@@ -173,12 +167,14 @@ bin/contents_feeder_redis --site=teen.fi && sleep 90 && bin/contents_feeder_redi
 bin/contents_feeder_redis --site=astutus.fi && sleep 90 && bin/contents_feeder_redis --site=www.astutus.fi && sleep 90 && bin/contents_feeder_redis --site=chat.astutus.fi
 bin/contents_feeder_redis --site=pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.pikkupillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pikkupillu.fi
 bin/contents_feeder_redis --site=transu.fi && sleep 90 && bin/contents_feeder_redis --site=www.transu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.transu.fi
-
-
-
 bin/contents_feeder_redis --site=allfreexxx.com && sleep 90 && bin/contents_feeder_redis --site=www.allfreexxx.com && sleep 90 && bin/contents_feeder_redis --site=chat.allfreexxx.com
-
 bin/contents_feeder_redis --site=klickhere.mobi && sleep 90 && bin/contents_feeder_redis --site=www.klickhere.mobi && sleep 90 && bin/contents_feeder_redis --site=chat.klickhere.mobi
+
+
+bin/contents_feeder_redis --site=bestsex.cc && sleep 90 && bin/contents_feeder_redis --site=www.bestsex.cc && sleep 90 && bin/contents_feeder_redis --site=chat.bestsex.cc
+
+bin/contents_feeder_redis --site=mostpopularsites.org && sleep 90 && bin/contents_feeder_redis --site=www.mostpopularsites.org && sleep 90 && bin/contents_feeder_redis --site=chat.mostpopularsites.org
+
 
 
 
