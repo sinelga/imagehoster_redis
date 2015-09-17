@@ -8,11 +8,11 @@ import (
 	"handlers/getAll"
 	"handlers/getOne"
 	"log/syslog"
+	"net"
 	"net/http"
 	"startones"
-	"sync"
-	"net"
 	"strings"
+	"sync"
 )
 
 var startOnce sync.Once
@@ -27,7 +27,27 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	})
 
-//	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
+	//	var variant string
+	//	var user_agent string
+
+	//	for k, v := range r.Header {
+	//
+	//		golog.Info("key: " + k + " value: " + v[0])
+	//
+	//
+	//		if k == "X-Variant" {
+	//			variant = r.Header["X-Variant"][0]
+	//
+	//		}
+	//		if k == "User-Agent" {
+	//			user_agent = r.Header["User-Agent"][0]
+	//
+	//		}
+	//	}
+
+	//	golog.Info("User-Agent ->"+user_agent+" variant->" +variant)
+
+	//	golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 	site, _, _ := net.SplitHostPort(r.Host)
 
@@ -54,28 +74,33 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	id := c.URLParams["id"]
 
+	//	if strings.HasPrefix(user_agent,"msnbot") {
+	//
+	//		golog.Info("msnbot!!!")
+	//
+	//
+	//	}
+
 	if id == "" {
 
-		characters,exist := getAll.GetAll(golog, rds, site)
+		characters, exist := getAll.GetAll(golog, rds, site)
 
 		if !exist {
-			
-			http.NotFound(w,r)
+
+			http.NotFound(w, r)
 		} else {
 
+			bytes, e = json.Marshal(characters)
+			if e != nil {
 
-		bytes, e = json.Marshal(characters)
-		if e != nil {
+				golog.Err(e.Error())
 
-			golog.Err(e.Error())
+			}
 
-		}
-		
 		}
 
 	} else {
 
-		
 		character, _ := getOne.GetById(golog, rds, site, id)
 
 		bytes, e = json.Marshal(character)
