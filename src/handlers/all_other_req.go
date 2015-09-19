@@ -94,8 +94,10 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 				character, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
 				if exist {
-
-					if strings.HasPrefix(user_agent, "msnbot") || strings.ContainsAny(user_agent, "bingbot") {
+					
+					golog.Info(user_agent)
+					
+					if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
 
 						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character,site)
 
@@ -106,7 +108,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					if strings.HasPrefix(user_agent, "msnbot") || strings.ContainsAny(user_agent, "bingbot"){
+					if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot"){
 
 						characters, exist := getAll.GetAll(golog, rds, site)
 
@@ -126,16 +128,17 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			} else {
 
-				if strings.HasPrefix(user_agent, "msnbot") {
+				if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
 
 					golog.Info("msnbot!!! not exist")
+//					http.NotFound(w, r)
 
 				} else {
-					http.NotFound(w, r)
+//					http.NotFound(w, r)
 				}
 
 			}
-			//			http.NotFound(w, r)
+//						http.NotFound(w, r)
 
 		}
 

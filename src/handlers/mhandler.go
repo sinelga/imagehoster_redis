@@ -74,12 +74,6 @@ func MhandleAll(c web.C, w http.ResponseWriter, r *http.Request) {
 
 	id := c.URLParams["id"]
 
-	//	if strings.HasPrefix(user_agent,"msnbot") {
-	//
-	//		golog.Info("msnbot!!!")
-	//
-	//
-	//	}
 
 	if id == "" {
 
