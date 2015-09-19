@@ -107,7 +107,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					if strings.HasPrefix(user_agent, "msnbot") {
+					if strings.HasPrefix(user_agent, "msnbot") ||  strings.HasPrefix(user_agent, "bingbot"){
 
 						characters, exist := getAll.GetAll(golog, rds, site)
 
