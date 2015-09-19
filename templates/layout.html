@@ -2,16 +2,37 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<title>{{.SiteCharacter.Id}} {{.SiteCharacter.Moto}}</title>
 	</head>
 	<body>
+	
+		<div class="container">
 		{{$site := .Site}}
-		<h1>{{.SiteCharacter.Moto}}</h1>
-		<h2>{{.SiteCharacter.Name}} {{.SiteCharacter.City}}</h2>
-		<img alt="" src="http://{{$site}}:8000/img/{{.SiteCharacter.ImgId}}/{{.SiteCharacter.Img_file_name}}/150/200">
-		{{.SiteCharacter.Description}}
 		
-		<a href="/">HOME</a>
+			<h1>{{.SiteCharacter.Moto}}</h1>
+		
+			<div class="media">
+			
+				<div class="media-left">
+					<img alt="" src="http://{{$site}}:8000/img/{{.SiteCharacter.ImgId}}/{{.SiteCharacter.Img_file_name}}/150/200">
+					
+				</div>
+				<div class="media-body">
+					<h2 class="bg-primary media-heading" >{{.SiteCharacter.Name}} {{.SiteCharacter.City}}</h2>
+				
+					{{.SiteCharacter.Description}}
+		
+					<a class="btn btn-default" href="/">HOME</a>
+				</div>
+		
+			</div>
+		</div>
 						
 	</body>
 		

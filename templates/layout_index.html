@@ -2,19 +2,40 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		
 	</head>
 	<body>
+	<div class="container">
 	
 		{{$site := .Site}}
 				
 		{{range .SiteCharaters}}
 		
+		<div class="media">
+		
+			<div class="media-left">
+				<img alt="" src="http://{{$site}}:8000/img/{{.ImgId}}/{{.Img_file_name}}/150/200">
+			</div>
+		
+			<div class="media-body">
+				<h2 class="bg-primary media-heading">{{.Name}} {{.City}}</h2>
+				{{.Description}}
+			</div>
+		
 		<a href="/{{.Id}}/{{.Moto | PermLink}}"><h1>{{.Moto}}</h1></a>
-		<h2>{{.Name}} {{.City}}</h2>
-		<img alt="" src="http://{{$site}}:8000/img/{{.ImgId}}/{{.Img_file_name}}/150/200">
-		{{.Description}}
+				
+		
 		{{end}}
+
+		</div>
+		
+	</div>	
 						
 	</body>
 		
