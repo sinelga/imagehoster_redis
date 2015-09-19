@@ -95,19 +95,18 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				if exist {
 
-					if strings.HasPrefix(user_agent, "msnbot") {
+					if strings.HasPrefix(user_agent, "msnbot") || strings.ContainsAny(user_agent, "bingbot") {
 
 						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character,site)
 
 					} else {
 
 						http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_"+variant+"/dist/index.html")
-						//						http.ServeFile(w, r, "/home/juno/git/"+variant+"_fi_FI_desk_mobile/dist/index.html")
 					}
 
 				} else {
 
-					if strings.HasPrefix(user_agent, "msnbot") ||  strings.HasPrefix(user_agent, "bingbot"){
+					if strings.HasPrefix(user_agent, "msnbot") || strings.ContainsAny(user_agent, "bingbot"){
 
 						characters, exist := getAll.GetAll(golog, rds, site)
 
