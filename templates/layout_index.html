@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+	</head>
+	<body>
+	
+		{{$site := .Site}}
+				
+		{{range .SiteCharaters}}
+		
+		<a href="/{{.Id}}/{{.Moto | PermLink}}"><h1>{{.Moto}}</h1></a>
+		<h2>{{.Name}} {{.City}}</h2>
+		<img alt="" src="http://{{$site}}:8000/img/{{.ImgId}}/{{.Img_file_name}}/150/200">
+		{{.Description}}
+		{{end}}
+						
+	</body>
+		
+</html>

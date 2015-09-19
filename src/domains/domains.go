@@ -60,8 +60,15 @@ type Character struct {
 	Img_content_type string
 	Img_file_size    int
 	Img_updated_at   time.Time
-//	Keyword          string
 }
+
+type CharacterSite struct {
+	
+	Site string
+	
+	SiteCharacter Character
+}
+
 
 type CharacterRedis struct {
 	Id            string
@@ -76,8 +83,15 @@ type CharacterRedis struct {
 	Created_at    time.Time
 	ImgId		  int	
 	Img_file_name string
-//	Keyword          string
 }
+
+type CharacterRedisSite struct {
+	Site string
+	PermLink string
+	SiteCharaters []CharacterRedis
+	
+}
+
 
 type Paragraph struct {
 	Ptitle     string

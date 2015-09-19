@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{.SiteCharacter.Id}} {{.SiteCharacter.Moto}}</title>
+	</head>
+	<body>
+		{{$site := .Site}}
+		<h1>{{.SiteCharacter.Moto}}</h1>
+		<h2>{{.SiteCharacter.Name}} {{.SiteCharacter.City}}</h2>
+		<img alt="" src="http://{{$site}}:8000/img/{{.SiteCharacter.ImgId}}/{{.SiteCharacter.Img_file_name}}/150/200">
+		{{.SiteCharacter.Description}}
+		
+		<a href="/">HOME</a>
+						
+	</body>
+		
+</html>

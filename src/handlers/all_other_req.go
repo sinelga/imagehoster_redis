@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"notjsbots"
 	"startones"
+	"handlers/getAll"
 	//	"strconv"
 	"strings"
 )
@@ -96,12 +97,30 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 					if strings.HasPrefix(user_agent, "msnbot") {
 
-						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character)
+						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character,site)
 
 					} else {
 
 						http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_"+variant+"/dist/index.html")
 						//						http.ServeFile(w, r, "/home/juno/git/"+variant+"_fi_FI_desk_mobile/dist/index.html")
+					}
+
+				} else {
+
+					if strings.HasPrefix(user_agent, "msnbot") {
+
+						characters, exist := getAll.GetAll(golog, rds, site)
+
+						if !exist {
+
+							http.NotFound(w, r)
+						} else {
+
+							notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters,site)
+
+
+						}
+
 					}
 
 				}
