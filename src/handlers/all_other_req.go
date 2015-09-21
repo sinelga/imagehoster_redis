@@ -11,7 +11,7 @@ import (
 	"notjsbots"
 	"startones"
 	//	"strconv"
-	"fmt"
+	//	"fmt"
 	"strings"
 )
 
@@ -55,7 +55,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 		notjsbot := false
 
-		if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
+		if strings.Contains(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") || strings.Contains(user_agent, "yahoo") {
 
 			notjsbot = true
 		}
@@ -97,7 +97,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			id_arr := strings.Split(path, "/")
 
-			fmt.Println("id_arr", len(id_arr))
+			//			fmt.Println("id_arr", len(id_arr))
 
 			if len(id_arr) > 1 {
 
@@ -133,7 +133,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			} else {
 
-					golog.Info("!!! "+user_agent)
+				golog.Info("!!! very strange" + user_agent)
 
 			}
 			//						http.NotFound(w, r)
