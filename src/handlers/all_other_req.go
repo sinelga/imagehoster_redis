@@ -11,7 +11,7 @@ import (
 	"notjsbots"
 	"startones"
 	//	"strconv"
-	//	"fmt"
+		"fmt"
 	"strings"
 )
 
@@ -97,11 +97,13 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			id_arr := strings.Split(path, "/")
 
-			//			fmt.Println("id_arr", len(id_arr))
+						fmt.Println("id_arr", len(id_arr))
 
-			if len(id_arr) > 1 {
+			if len(id_arr) > 2 {
 
 				character, exist := getOne.GetById(golog, rds, site, id_arr[1])
+
+				//				existbyId := true
 
 				if exist {
 
@@ -118,22 +120,28 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					characters, exist := getAll.GetAll(golog, rds, site)
-
-					if !exist {
-
-						http.NotFound(w, r)
-					} else {
-
-						notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters, site)
-
-					}
+					//					existbyId = false
+					http.NotFound(w, r)
 
 				}
 
+				//				if existbyId {
+				//
+				//				}
+
 			} else {
 
-				golog.Info("!!! very strange" + user_agent)
+	
+				characters, exist := getAll.GetAll(golog, rds, site)
+
+				if !exist {
+
+					http.NotFound(w, r)
+				} else {
+
+					notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters, site)
+
+				}
 
 			}
 			//						http.NotFound(w, r)
