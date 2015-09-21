@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"notjsbots"
 	"startones"
-	//	"strconv"
-		"fmt"
+		"strconv"
+//		"fmt"
 	"strings"
 )
 
@@ -97,7 +97,9 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			id_arr := strings.Split(path, "/")
 
-						fmt.Println("id_arr", len(id_arr))
+//						fmt.Println("id_arr", len(id_arr))
+						
+			golog.Info("id_arr "+strconv.Itoa(len(id_arr)))				
 
 			if len(id_arr) > 2 {
 
@@ -120,14 +122,10 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					//					existbyId = false
 					http.NotFound(w, r)
 
 				}
 
-				//				if existbyId {
-				//
-				//				}
 
 			} else {
 
