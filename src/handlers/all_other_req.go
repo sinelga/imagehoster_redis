@@ -51,6 +51,15 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 		golog.Info("Elaborate other ->site " + site + " host " + r.Host)
+		
+		notjsbot :=false
+		
+		
+		if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot"){
+			
+			notjsbot=true
+		}
+		
 
 		if site == "localhost" {
 
@@ -97,7 +106,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 					
 					golog.Info(user_agent)
 					
-					if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
+					if notjsbot  {
 
 						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character,site)
 
@@ -108,7 +117,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot"){
+					if notjsbot {
 
 						characters, exist := getAll.GetAll(golog, rds, site)
 
@@ -128,7 +137,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			} else {
 
-				if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
+				if  notjsbot {
 
 					golog.Info("msnbot!!! not exist")
 //					http.NotFound(w, r)
