@@ -3,14 +3,15 @@ package handlers
 import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/zenazn/goji/web"
+	"handlers/getAll"
 	"handlers/getOne"
 	"handlers/robots"
 	"handlers/sitemap"
 	"net/http"
 	"notjsbots"
 	"startones"
-	"handlers/getAll"
 	//	"strconv"
+	"fmt"
 	"strings"
 )
 
@@ -51,15 +52,13 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		//		golog.Info("UserAgent " + r.UserAgent() + " Host " + r.Host + " RequestURI " + r.RequestURI + " r.RemoteAddr " + r.RemoteAddr + " referer " + r.Referer())
 
 		golog.Info("Elaborate other ->site " + site + " host " + r.Host)
-		
-		notjsbot :=false
-		
-		
-		if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot"){
-			
-			notjsbot=true
+
+		notjsbot := false
+
+		if strings.HasPrefix(user_agent, "msnbot") || strings.Contains(user_agent, "bingbot") {
+
+			notjsbot = true
 		}
-		
 
 		if site == "localhost" {
 
@@ -98,17 +97,19 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			id_arr := strings.Split(path, "/")
 
-			if len(id_arr) > 0 {
+			fmt.Println("id_arr", len(id_arr))
+
+			if len(id_arr) > 1 {
 
 				character, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
 				if exist {
-					
-					golog.Info(user_agent)
-					
-					if notjsbot  {
 
-						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character,site)
+					golog.Info(user_agent)
+
+					if notjsbot {
+
+						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character, site)
 
 					} else {
 
@@ -117,19 +118,14 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				} else {
 
-					if notjsbot {
+					characters, exist := getAll.GetAll(golog, rds, site)
 
-						characters, exist := getAll.GetAll(golog, rds, site)
+					if !exist {
 
-						if !exist {
+						http.NotFound(w, r)
+					} else {
 
-							http.NotFound(w, r)
-						} else {
-
-							notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters,site)
-
-
-						}
+						notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters, site)
 
 					}
 
@@ -137,17 +133,10 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			} else {
 
-				if  notjsbot {
-
-					golog.Info("msnbot!!! not exist")
-//					http.NotFound(w, r)
-
-				} else {
-//					http.NotFound(w, r)
-				}
+					golog.Info("!!! "+user_agent)
 
 			}
-//						http.NotFound(w, r)
+			//						http.NotFound(w, r)
 
 		}
 

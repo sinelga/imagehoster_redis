@@ -66,12 +66,9 @@ func GetAll(golog syslog.Writer, c redis.Conn, site string) ([]domains.Character
 
 				} else {
 
-//					fmt.Println(len(bcharactersRedis))
-
 					for _, x := range bcharactersRedis {
 						var v, ok = x.([]byte)
 						if ok {
-//							fmt.Println(string(v))
 
 							var character domains.CharacterRedis
 
