@@ -173,10 +173,10 @@ bin/contents_feeder_redis --site=bestsex.cc && sleep 90 && bin/contents_feeder_r
 bin/contents_feeder_redis --site=mostpopularsites.org && sleep 90 && bin/contents_feeder_redis --site=www.mostpopularsites.org && sleep 90 && bin/contents_feeder_redis --site=chat.mostpopularsites.org
 
 #common44ang accept other bots 
-
-
 bin/contents_feeder_redis --site=karvaisia.fi && sleep 90 && bin/contents_feeder_redis --site=www.karvaisia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.karvaisia.fi
 
+
+bin/contents_feeder_redis --site=shemale.fi && sleep 90 && bin/contents_feeder_redis --site=www.shemale.fi && sleep 90 && bin/contents_feeder_redis --site=chat.shemale.fi
 
 
 
