@@ -174,10 +174,10 @@ bin/contents_feeder_redis --site=mostpopularsites.org && sleep 90 && bin/content
 
 #common44ang accept other bots 
 bin/contents_feeder_redis --site=karvaisia.fi && sleep 90 && bin/contents_feeder_redis --site=www.karvaisia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.karvaisia.fi
-
-
 bin/contents_feeder_redis --site=shemale.fi && sleep 90 && bin/contents_feeder_redis --site=www.shemale.fi && sleep 90 && bin/contents_feeder_redis --site=chat.shemale.fi
 
+
+bin/contents_feeder_redis --site=isot.fi && sleep 90 && bin/contents_feeder_redis --site=www.isot.fi && sleep 90 && bin/contents_feeder_redis --site=chat.isot.fi
 
 
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
