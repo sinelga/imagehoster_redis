@@ -179,13 +179,11 @@ bin/contents_feeder_redis --site=isot.fi && sleep 90 && bin/contents_feeder_redi
 bin/contents_feeder_redis --site=seksinovelleja.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksinovelleja.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksinovelleja.fi
 bin/contents_feeder_redis --site=novelleja.fi && sleep 90 && bin/contents_feeder_redis --site=www.novelleja.fi && sleep 90 && bin/contents_feeder_redis --site=chat.novelleja.fi
 bin/contents_feeder_redis --site=seksituubi.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksituubi.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksituubi.fi
-
-
 bin/contents_feeder_redis --site=intiimihieronta.fi && sleep 90 && bin/contents_feeder_redis --site=www.intiimihieronta.fi && sleep 90 && bin/contents_feeder_redis --site=chat.intiimihieronta.fi
-
 bin/contents_feeder_redis --site=siitin.fi && sleep 90 && bin/contents_feeder_redis --site=www.siitin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siitin.fi
 
 
+bin/contents_feeder_redis --site=sexualwish.com && sleep 90 && bin/contents_feeder_redis --site=www.sexualwish.com && sleep 90 && bin/contents_feeder_redis --site=chat.sexualwish.com
 
 
 bin/contents_feeder_redis --site=sub.fi && sleep 90 && bin/contents_feeder_redis --site=www.sub.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sub.fi
