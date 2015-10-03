@@ -24,10 +24,10 @@ func main() {
 
 	}
 
-	golog, config := startones.Start()
+	golog, _ := startones.Start()
 
-	redisprotocol := config.Redis.Prot
-	redishost := config.Redis.Host
+	redisprotocol := "tcp"
+	redishost := ":6379"
 
 	c, err := redis.Dial(redisprotocol, redishost)
 	if err != nil {
