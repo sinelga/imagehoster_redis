@@ -3,7 +3,7 @@ package elaboratekey
 import (
 	"domains"
 	"encoding/json"
-	"fmt"
+//	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"log/syslog"
 )
@@ -33,8 +33,6 @@ func ScanKey(golog syslog.Writer, c redis.Conn, key string, fromphnumer string, 
 
 					if characterRedis.Phone == fromphnumer {
 
-						fmt.Println(characterRedis.Phone)
-
 						characterRedis.Phone = tophnumber
 
 						bcharacter, _ := json.Marshal(characterRedis)
@@ -54,6 +52,5 @@ func ScanKey(golog syslog.Writer, c redis.Conn, key string, fromphnumer string, 
 		}
 
 	}
-
 
 }
