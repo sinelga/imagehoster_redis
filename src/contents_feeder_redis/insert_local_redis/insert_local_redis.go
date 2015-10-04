@@ -3,19 +3,19 @@ package insert_local_redis
 import (
 	"domains"
 	"encoding/json"
-//	"fmt"
+	//	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"log/syslog"
-//	"time"
+	//	"time"
 )
 
-	func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis) {		
+func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character domains.CharacterRedis) {
 
 	update_insert := false
-	
+
 	field := character.Id
 
-	if exist, err := redis.Int(c.Do("HEXISTS", key,field)); err != nil {
+	if exist, err := redis.Int(c.Do("HEXISTS", key, field)); err != nil {
 
 		golog.Crit(err.Error())
 
@@ -41,15 +41,13 @@ import (
 					golog.Crit(err.Error())
 
 				}
-				
-				
 
-					character.Name = characterold.Name
-					character.Age = characterold.Age
-					character.Phone = characterold.Phone
-					character.City = characterold.City
+				character.Name = characterold.Name
+				character.Age = characterold.Age
+				character.Phone = characterold.Phone
+				character.City = characterold.City
 
-//				}
+				//				}
 
 			}
 
@@ -61,7 +59,7 @@ import (
 
 		bcharacter, _ := json.Marshal(character)
 
-		if _, err := c.Do("HSET", key,field, bcharacter); err != nil {
+		if _, err := c.Do("HSET", key, field, bcharacter); err != nil {
 
 			golog.Crit(err.Error())
 

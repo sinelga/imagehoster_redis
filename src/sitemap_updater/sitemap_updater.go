@@ -48,43 +48,11 @@ func main() {
 	}
 	defer rds.Close()
 
-//	files, _ := filepath.Glob("upload/img/*")
-
-//	set_all_id := make(map[string]struct{})
-
-//	for _, f := range files {
-
-////		if intid, err := strconv.Atoi(strings.Split(f, "/")[2]); err != nil {
-//		
-//
-//			fmt.Println(err.Error())
-//
-//		} else {
-//
-//			set_all_id[intid] = struct{}{}
-//
-//		}
-
-//			intid := strings.Split(f, "/")[2]
-			
-//			fmt.Println(intid)
-			
-			
-//			set_all_id[intid] = struct{}{}
-
-//	}
-
-//	fmt.Println("img num", len(files))
-
-//	allindexes := 
-
-
 
 	mapfiles, _ := filepath.Glob("maps/*")
 
 	for _, f := range mapfiles {
 
-//		fmt.Println(f)
 
 		site := strings.Split(f, "_")[1]
 		
