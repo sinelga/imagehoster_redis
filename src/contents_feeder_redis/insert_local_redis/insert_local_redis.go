@@ -47,8 +47,6 @@ func InsertCharacter(golog syslog.Writer, c redis.Conn, key string, character do
 				character.Phone = characterold.Phone
 				character.City = characterold.City
 
-				//				}
-
 			}
 
 		}
