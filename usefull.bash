@@ -178,10 +178,10 @@ bin/contents_feeder_redis --site=seksituubi.fi && sleep 90 && bin/contents_feede
 bin/contents_feeder_redis --site=intiimihieronta.fi && sleep 90 && bin/contents_feeder_redis --site=www.intiimihieronta.fi && sleep 90 && bin/contents_feeder_redis --site=chat.intiimihieronta.fi
 bin/contents_feeder_redis --site=siitin.fi && sleep 90 && bin/contents_feeder_redis --site=www.siitin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siitin.fi
 bin/contents_feeder_redis --site=sexualwish.com && sleep 90 && bin/contents_feeder_redis --site=www.sexualwish.com && sleep 90 && bin/contents_feeder_redis --site=chat.sexualwish.com
-
 bin/contents_feeder_redis --site=panotuupi.fi && sleep 90 && bin/contents_feeder_redis --site=www.panotuupi.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panotuupi.fi
-
 bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redis --site=www.sexs.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sexs.fi
 
-bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redis --site=www.sexs.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sexs.fi
 
+
+#common45ang accept other bots 
+bin/contents_feeder_redis --site=paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljaat.fi
