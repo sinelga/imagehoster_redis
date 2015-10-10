@@ -185,3 +185,4 @@ bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redi
 
 #common45ang accept other bots 
 bin/contents_feeder_redis --site=paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljaat.fi
+bin/contents_feeder_redis --site=naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naiminen.fi
