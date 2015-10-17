@@ -186,5 +186,6 @@ bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redi
 #common45ang accept other bots 
 bin/contents_feeder_redis --site=paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljaat.fi
 bin/contents_feeder_redis --site=naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naiminen.fi
-
 bin/contents_feeder_redis --site=teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinipillu.fi
+
+bin/contents_feeder_redis --site=lespo.fi && sleep 90 && bin/contents_feeder_redis --site=www.lespo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.lespo.fi
