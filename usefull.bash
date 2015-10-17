@@ -189,3 +189,7 @@ bin/contents_feeder_redis --site=naiminen.fi && sleep 90 && bin/contents_feeder_
 bin/contents_feeder_redis --site=teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinipillu.fi
 
 bin/contents_feeder_redis --site=lespo.fi && sleep 90 && bin/contents_feeder_redis --site=www.lespo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.lespo.fi
+
+bin/contents_feeder_redis --site=siskoa.fi && sleep 90 && bin/contents_feeder_redis --site=www.siskoa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siskoa.fi
+
+bin/contents_feeder_redis --site=naintikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.naintikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naintikuvia.fi
