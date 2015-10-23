@@ -195,3 +195,7 @@ bin/contents_feeder_redis --site=housuitta.fi && sleep 90 && bin/contents_feeder
 bin/contents_feeder_redis --site=teinin.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinin.fi
 bin/contents_feeder_redis --site=alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=www.alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=chat.alastomana.fi
 bin/contents_feeder_redis --site=nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=www.nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nussimista.fi
+
+bin/contents_feeder_redis --site=nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuoleminen.fi
+
+bin/contents_feeder_redis --site=mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.mummoporno.fi
