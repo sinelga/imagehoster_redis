@@ -187,9 +187,11 @@ bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redi
 bin/contents_feeder_redis --site=paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljaat.fi
 bin/contents_feeder_redis --site=naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naiminen.fi
 bin/contents_feeder_redis --site=teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinipillu.fi
-
 bin/contents_feeder_redis --site=lespo.fi && sleep 90 && bin/contents_feeder_redis --site=www.lespo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.lespo.fi
-
 bin/contents_feeder_redis --site=siskoa.fi && sleep 90 && bin/contents_feeder_redis --site=www.siskoa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.siskoa.fi
-
 bin/contents_feeder_redis --site=naintikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.naintikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naintikuvia.fi
+bin/contents_feeder_redis --site=panna.fi && sleep 90 && bin/contents_feeder_redis --site=www.panna.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panna.fi
+bin/contents_feeder_redis --site=housuitta.fi && sleep 90 && bin/contents_feeder_redis --site=www.housuitta.fi && sleep 90 && bin/contents_feeder_redis --site=chat.housuitta.fi
+bin/contents_feeder_redis --site=teinin.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinin.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinin.fi
+bin/contents_feeder_redis --site=alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=www.alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=chat.alastomana.fi
+bin/contents_feeder_redis --site=nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=www.nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nussimista.fi
