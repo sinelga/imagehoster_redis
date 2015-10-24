@@ -182,7 +182,6 @@ bin/contents_feeder_redis --site=panotuupi.fi && sleep 90 && bin/contents_feeder
 bin/contents_feeder_redis --site=sexs.fi && sleep 90 && bin/contents_feeder_redis --site=www.sexs.fi && sleep 90 && bin/contents_feeder_redis --site=chat.sexs.fi
 
 
-
 #common45ang accept other bots 
 bin/contents_feeder_redis --site=paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=www.paljaat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.paljaat.fi
 bin/contents_feeder_redis --site=naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.naiminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naiminen.fi
@@ -196,6 +195,11 @@ bin/contents_feeder_redis --site=teinin.fi && sleep 90 && bin/contents_feeder_re
 bin/contents_feeder_redis --site=alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=www.alastomana.fi && sleep 90 && bin/contents_feeder_redis --site=chat.alastomana.fi
 bin/contents_feeder_redis --site=nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=www.nussimista.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nussimista.fi
 
-bin/contents_feeder_redis --site=nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuoleminen.fi
 
+#common46ang accept other bots
+bin/contents_feeder_redis --site=nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuoleminen.fi
 bin/contents_feeder_redis --site=mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.mummoporno.fi
+
+bin/contents_feeder_redis --site=vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vitunkuvia.fi
+
+bin/contents_feeder_redis --site=pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideo.fi
