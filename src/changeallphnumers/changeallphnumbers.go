@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"startones"
+	"strings"
 )
 
 const APP_VERSION = "0.1"
@@ -24,7 +25,7 @@ func main() {
 		fmt.Println("Version:", APP_VERSION)
 
 	}
-	
+
 	if len(*fromFlag) > 0 && len(*toFlag) > 0 {
 
 		golog, _ := startones.Start()
@@ -44,11 +45,14 @@ func main() {
 
 		for _, key := range allkeys {
 
-			fmt.Println(key)
+			if !strings.ContainsAny(key, ":") {
+
+				fmt.Println(key)
+				elaboratekey.ScanKey(golog, c, key, *fromFlag, *toFlag)
+			}
 		}
 
-		elaboratekey.ScanKey(golog, c, "www.test.com", *fromFlag, *toFlag)
-		
+		//		elaboratekey.ScanKey(golog, c, "www.test.com", *fromFlag, *toFlag)
 
 	} else {
 

@@ -199,7 +199,5 @@ bin/contents_feeder_redis --site=nussimista.fi && sleep 90 && bin/contents_feede
 #common46ang accept other bots
 bin/contents_feeder_redis --site=nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuoleminen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuoleminen.fi
 bin/contents_feeder_redis --site=mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.mummoporno.fi
-
 bin/contents_feeder_redis --site=vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vitunkuvia.fi
-
 bin/contents_feeder_redis --site=pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideo.fi
