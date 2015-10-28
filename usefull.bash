@@ -201,3 +201,7 @@ bin/contents_feeder_redis --site=nuoleminen.fi && sleep 90 && bin/contents_feede
 bin/contents_feeder_redis --site=mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=www.mummoporno.fi && sleep 90 && bin/contents_feeder_redis --site=chat.mummoporno.fi
 bin/contents_feeder_redis --site=vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.vitunkuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vitunkuvia.fi
 bin/contents_feeder_redis --site=pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideo.fi
+
+bin/contents_feeder_redis --site=seksikertomuksia.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksikertomuksia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksikertomuksia.fi
+
+bin/contents_feeder_redis --site=pornoelokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornoelokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornoelokuvat.fi
