@@ -203,3 +203,15 @@ bin/contents_feeder_redis --site=vitunkuvia.fi && sleep 90 && bin/contents_feede
 bin/contents_feeder_redis --site=pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=www.pilluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pilluvideo.fi
 bin/contents_feeder_redis --site=seksikertomuksia.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksikertomuksia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksikertomuksia.fi
 bin/contents_feeder_redis --site=pornoelokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornoelokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornoelokuvat.fi
+bin/contents_feeder_redis --site=panokuva.fi && sleep 90 && bin/contents_feeder_redis --site=www.panokuva.fi && sleep 90 && bin/contents_feeder_redis --site=chat.panokuva.fi
+bin/contents_feeder_redis --site=pissaa.fi && sleep 90 && bin/contents_feeder_redis --site=www.pissaa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pissaa.fi
+bin/contents_feeder_redis --site=aikuis.fi && sleep 90 && bin/contents_feeder_redis --site=www.aikuis.fi && sleep 90 && bin/contents_feeder_redis --site=chat.aikuis.fi
+bin/contents_feeder_redis --site=tissikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=www.tissikuvia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.tissikuvia.fi
+bin/contents_feeder_redis --site=nuoren.fi && sleep 90 && bin/contents_feeder_redis --site=www.nuoren.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nuoren.fi
+
+#common47ang accept other bots
+
+
+bin/contents_feeder_redis --site=isotissinen.fi && sleep 90 && bin/contents_feeder_redis --site=www.isotissinen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.isotissinen.fi
+
+bin/contents_feeder_redis --site=kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kiimapillu.fi
