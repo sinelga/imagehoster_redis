@@ -215,3 +215,7 @@ bin/contents_feeder_redis --site=nuoren.fi && sleep 90 && bin/contents_feeder_re
 bin/contents_feeder_redis --site=isotissinen.fi && sleep 90 && bin/contents_feeder_redis --site=www.isotissinen.fi && sleep 90 && bin/contents_feeder_redis --site=chat.isotissinen.fi
 
 bin/contents_feeder_redis --site=kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kiimapillu.fi
+
+bin/contents_feeder_redis --site=teinipornoa.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinipornoa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinipornoa.fi
+
+bin/contents_feeder_redis --site=juutube.fi && sleep 90 && bin/contents_feeder_redis --site=www.juutube.fi && sleep 90 && bin/contents_feeder_redis --site=chat.juutube.fi
