@@ -214,7 +214,7 @@ bin/contents_feeder_redis --site=isotissinen.fi && sleep 90 && bin/contents_feed
 bin/contents_feeder_redis --site=kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=www.kiimapillu.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kiimapillu.fi
 bin/contents_feeder_redis --site=teinipornoa.fi && sleep 90 && bin/contents_feeder_redis --site=www.teinipornoa.fi && sleep 90 && bin/contents_feeder_redis --site=chat.teinipornoa.fi
 bin/contents_feeder_redis --site=juutube.fi && sleep 90 && bin/contents_feeder_redis --site=www.juutube.fi && sleep 90 && bin/contents_feeder_redis --site=chat.juutube.fi
-
 bin/contents_feeder_redis --site=peppuun.fi && sleep 90 && bin/contents_feeder_redis --site=www.peppuun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.peppuun.fi
-
 bin/contents_feeder_redis --site=pornotarinoita.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornotarinoita.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornotarinoita.fi
+
+bin/contents_feeder_redis --site=naintivideot.fi && sleep 90 && bin/contents_feeder_redis --site=www.naintivideot.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naintivideot.fi
