@@ -218,3 +218,5 @@ bin/contents_feeder_redis --site=peppuun.fi && sleep 90 && bin/contents_feeder_r
 bin/contents_feeder_redis --site=pornotarinoita.fi && sleep 90 && bin/contents_feeder_redis --site=www.pornotarinoita.fi && sleep 90 && bin/contents_feeder_redis --site=chat.pornotarinoita.fi
 
 bin/contents_feeder_redis --site=naintivideot.fi && sleep 90 && bin/contents_feeder_redis --site=www.naintivideot.fi && sleep 90 && bin/contents_feeder_redis --site=chat.naintivideot.fi
+
+bin/contents_feeder_redis --site=vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=www.vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vittuun.fi
