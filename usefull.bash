@@ -220,3 +220,5 @@ bin/contents_feeder_redis --site=naintivideot.fi && sleep 90 && bin/contents_fee
 bin/contents_feeder_redis --site=vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=www.vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vittuun.fi
 
 bin/contents_feeder_redis --site=seksielokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksielokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksielokuvat.fi
+
+bin/contents_feeder_redis --site=isorintaisia.fi && sleep 90 && bin/contents_feeder_redis --site=www.isorintaisia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.isorintaisia.fi
