@@ -220,5 +220,7 @@ bin/contents_feeder_redis --site=naintivideot.fi && sleep 90 && bin/contents_fee
 bin/contents_feeder_redis --site=vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=www.vittuun.fi && sleep 90 && bin/contents_feeder_redis --site=chat.vittuun.fi
 bin/contents_feeder_redis --site=seksielokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=www.seksielokuvat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.seksielokuvat.fi
 bin/contents_feeder_redis --site=isorintaisia.fi && sleep 90 && bin/contents_feeder_redis --site=www.isorintaisia.fi && sleep 90 && bin/contents_feeder_redis --site=chat.isorintaisia.fi
-
 bin/contents_feeder_redis --site=kullit.fi && sleep 90 && bin/contents_feeder_redis --site=www.kullit.fi && sleep 90 && bin/contents_feeder_redis --site=chat.kullit.fi
+
+#common48ang accept other bots
+bin/contents_feeder_redis --site=pimpsa.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.pimpsa.fi && sleep 90 && bin/contents_feeder_redis --site=porno.pimpsa.fi
