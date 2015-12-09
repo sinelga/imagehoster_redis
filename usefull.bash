@@ -226,5 +226,6 @@ bin/contents_feeder_redis --site=kullit.fi && sleep 90 && bin/contents_feeder_re
 bin/contents_feeder_redis --site=pimpsa.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.pimpsa.fi && sleep 90 && bin/contents_feeder_redis --site=porno.pimpsa.fi
 bin/contents_feeder_redis --site=eroottista.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.eroottista.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.eroottista.fi
 bin/contents_feeder_redis --site=sexivideot.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.sexivideot.fi && sleep 90 && bin/contents_feeder_redis --site=video.sexivideot.fi
-
 bin/contents_feeder_redis --site=teinien.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.teinien.fi && sleep 90 && bin/contents_feeder_redis --site=sexi.teinien.fi
+
+bin/contents_feeder_redis --site=pornonovelli.fi && sleep 90 && bin/contents_feeder_redis --site=pillu.pornonovelli.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.pornonovelli.fi
