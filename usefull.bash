@@ -230,5 +230,6 @@ bin/contents_feeder_redis --site=teinien.fi && sleep 90 && bin/contents_feeder_r
 bin/contents_feeder_redis --site=pornonovelli.fi && sleep 90 && bin/contents_feeder_redis --site=pillu.pornonovelli.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.pornonovelli.fi
 bin/contents_feeder_redis --site=posliinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=video.posliinipillu.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.posliinipillu.fi
 bin/contents_feeder_redis --site=seksikertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=ilmaiset.seksikertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=alaston.seksikertomukset.fi
-
 bin/contents_feeder_redis --site=tirkistely.fi && sleep 90 && bin/contents_feeder_redis --site=kuvia.tirkistely.fi && sleep 90 && bin/contents_feeder_redis --site=porno.tirkistely.fi
+
+bin/contents_feeder_redis --site=erotika.fi && sleep 90 && bin/contents_feeder_redis --site=live.erotika.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.erotika.fi
