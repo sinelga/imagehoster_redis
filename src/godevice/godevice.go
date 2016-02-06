@@ -37,6 +37,9 @@ func GetType(r *http.Request) string {
               if strings.Contains(userAgent,"Googlebot"){
               	 deviceType="Web"
               }
+               if strings.Contains(userAgent,"Google Search Console"){
+               		deviceType="Web"
+               }
           return deviceType
         }
 
