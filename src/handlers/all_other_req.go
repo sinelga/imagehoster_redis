@@ -12,7 +12,7 @@ import (
 	"startones"
 	"strconv"
 	//		"fmt"
-	"github.com/hiteshmodha/goDevice"
+	"godevice"
 	"strings"
 )
 
@@ -61,7 +61,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 			notjsbot = true
 		}
 
-		deviceType := goDevice.GetType(r)
+		deviceType := godevice.GetType(r)
 
 		if deviceType == "Mobile" {
 

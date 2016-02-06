@@ -1,7 +1,7 @@
 !<arch>
-__.PKGDEF       0           0     0     644     58251     `
+__.PKGDEF       0           0     0     644     58228     `
 go object linux amd64 go1.5.3 X:none
-build id "7e80ba81e08932c304b55e5d870fcec6db0a6db7"
+build id "cb0dc536625acb8d395cc7a602535e653a29c154"
 
 $$
 package handlers
@@ -30,7 +30,7 @@ package handlers
 	import mime "mime"
 	import notjsbots "notjsbots"
 	import startones "startones"
-	import goDevice "github.com/hiteshmodha/goDevice"
+	import godevice "godevice"
 	import jpeg "image/jpeg"
 	import imaging "github.com/disintegration/imaging"
 	import sql "database/sql"
@@ -438,11 +438,11 @@ package handlers
 	func (@"errors".eÂ·2 *@"errors".errorString "esc:0x22") Error () (? string) { return @"errors".eÂ·2.@"errors".s }
 
 $$
- _go_.o          0           0     0     644     112475    `
+_go_.o          0           0     0     644     112268    `
 go object linux amd64 go1.5.3 X:none
 
 !
-  go13ldDgithub.com/garyburd/redigo/redis.a8github.com/zenazn/goji/web.a"handlers/getAll.a"handlers/getOne.a"handlers/robots.a$handlers/sitemap.anet/http.anotjsbots.astartones.astrconv.aBgithub.com/hiteshmodha/goDevice.astrings.a
+  go13ldDgithub.com/garyburd/redigo/redis.a8github.com/zenazn/goji/web.a"handlers/getAll.a"handlers/getOne.a"handlers/robots.a$handlers/sitemap.anet/http.anotjsbots.astartones.astrconv.agodevice.astrings.a
 fmt.anet/url.aio/ioutil.aimage/jpeg.aFgithub.com/disintegration/imaging.aruntime.adomains.aencoding/json.alog/syslog.a
 net.async.adatabase/sql.a@github.com/go-sql-driver/mysql.apath/filepath.aio.amime.aos.atime.a ş"".Elaborate   O  †OdH‹%    H„$¸ûÿÿH;A†  HìÈ  H    H‰$H    H‰\$è    1ÛH‰œ$ø  H‰œ$   1ÛH‰œ$  H‰œ$  H‹œ$ğ  Hƒû „>  H‹kHƒı „(  H‹]8H‰œ$8  H‹]@H‰œ$@  H‹œ$ğ  Hƒû „÷  H‹kxH‰¬$  H‹«€   H‰¬$   H    H‰$H    H‰\$HÇD$   è    H‹œ$ğ  Hƒû „  H‹k8H‰¬$ğ  H¼$H  1Àè    H    H‰$H‹œ$ğ  H‰\$Hœ$H  H‰\$è    H‹œ$H  1íH9ë„<  H‹œ$P  Hƒû „-  H‹+H‰¬$  H‹kH‰¬$   H‹kH‰¬$(  H‹œ$H  Hƒû „ñ  H‹+H‰¬$X  H‹kH‰¬$`  H‹œ$  H‰œ$¸  H‹œ$   H‰œ$À  H‹œ$(  H‰œ$È  H‹œ$`  Hƒû	ujH‹¬$X  H‰,$H‹¬$`  H‰l$H-    H‰l$HÇD$	   è    Š\$ €û t.H‹œ$¸  Hƒ¼$À   †B  H‹+H‰¬$ø  H‹kH‰¬$   H‹œ$`  Hƒû
 …   H‹¬$X  H‰,$H‹¬$`  H‰l$H-    H‰l$HÇD$
@@ -466,7 +466,7 @@ net.async.adatabase/sql.a@github.com/go-sql-driver/mysql.apath/filepath.aio.
    strings.Contains   ø  &go.string."bingbot"   
    strings.Contains     "go.string."yahoo"   ¶
    strings.Contains   Š
-  Ngithub.com/hiteshmodha/goDevice.GetType   ¢  $go.string."Mobile"   È
+   godevice.GetType   ¢  $go.string."Mobile"   È
    runtime.eqstring   ğ  "".golog   †  $go.string."Mobile"   ¬
   2log/syslog.(*Writer).Info   ˆ  *go.string."localhost"   ®
    runtime.eqstring   Î  0go.string."www.test.com"   ¶  (go.string."192.168."   Ü
@@ -834,7 +834,7 @@ net.async.adatabase/sql.a@github.com/go-sql-driver/mysql.apath/filepath.aio.
   notjsbots.init   Â
   startones.init   Ì
   strconv.init   Ö
-  Hgithub.com/hiteshmodha/goDevice.init   à
+  godevice.init   à
   strings.init   ê
   fmt.init   ô
   net/url.init   ş
@@ -924,5 +924,5 @@ sync  ş&go.importpath.sync.                        go.string."sync"   ş&g
 time  ş&go.importpath.time.                        go.string."time"   ş.go.string.hdr."strings"                       &go.string."strings"   ş&go.string."strings"   strings  ş,go.importpath.strings.                       &go.string."strings"   şTgo.string.hdr."github.com/zenazn/goji/web"                       Lgo.string."github.com/zenazn/goji/web"   şLgo.string."github.com/zenazn/goji/web" @  6github.com/zenazn/goji/web  şRgo.importpath.github.com/zenazn/goji/web.                       Lgo.string."github.com/zenazn/goji/web"   ş0go.string.hdr."net/http"                       (go.string."net/http"   ş(go.string."net/http"    net/http  ş.go.importpath.net/http.                       (go.string."net/http"   ş.go.string.hdr."net/url"                       &go.string."net/url"   ş&go.string."net/url"   net/url  ş,go.importpath.net/url.                       &go.string."net/url"   ş>go.string.hdr."handlers/getAll"                       6go.string."handlers/getAll"   ş6go.string."handlers/getAll"     handlers/getAll  ş<go.importpath.handlers/getAll.                       6go.string."handlers/getAll"   ş.go.string.hdr."domains"                       &go.string."domains"   ş&go.string."domains"   domains  ş,go.importpath.domains.                       &go.string."domains"   ş4go.string.hdr."log/syslog"             
           ,go.string."log/syslog"   ş,go.string."log/syslog"    log/syslog  ş2go.importpath.log/syslog.             
           ,go.string."log/syslog"   ş:go.string.hdr."encoding/json"                       2go.string."encoding/json"   ş2go.string."encoding/json"    encoding/json  ş8go.importpath.encoding/json.                       2go.string."encoding/json"   ş>go.string.hdr."handlers/getOne"                       6go.string."handlers/getOne"   ş6go.string."handlers/getOne"     handlers/getOne  ş<go.importpath.handlers/getOne.                       6go.string."handlers/getOne"   ş>go.string.hdr."handlers/robots"                       6go.string."handlers/robots"   ş6go.string."handlers/robots"     handlers/robots  ş<go.importpath.handlers/robots.                       6go.string."handlers/robots"   ş@go.string.hdr."handlers/sitemap"                       8go.string."handlers/sitemap"   ş8go.string."handlers/sitemap" 0  "handlers/sitemap  ş>go.importpath.handlers/sitemap.                       8go.string."handlers/sitemap"   ş$go.string.hdr."os"                       go.string."os"   şgo.string."os"   os  ş"go.importpath.os.                       go.string."os"   ş2go.string.hdr."io/ioutil"             	          *go.string."io/ioutil"   ş*go.string."io/ioutil"    io/ioutil  ş0go.importpath.io/ioutil.             	          *go.string."io/ioutil"   ş:go.string.hdr."path/filepath"                       2go.string."path/filepath"   ş2go.string."path/filepath"    path/filepath  ş8go.importpath.path/filepath.                       2go.string."path/filepath"   ş(go.string.hdr."mime"                        go.string."mime"   ş go.string."mime"   
-mime  ş&go.importpath.mime.                        go.string."mime"   ş2go.string.hdr."notjsbots"             	          *go.string."notjsbots"   ş*go.string."notjsbots"    notjsbots  ş0go.importpath.notjsbots.             	          *go.string."notjsbots"   ş2go.string.hdr."startones"             	          *go.string."startones"   ş*go.string."startones"    startones  ş0go.importpath.startones.             	          *go.string."startones"   ş^go.string.hdr."github.com/hiteshmodha/goDevice"                       Vgo.string."github.com/hiteshmodha/goDevice"   şVgo.string."github.com/hiteshmodha/goDevice" @  @github.com/hiteshmodha/goDevice  ş\go.importpath.github.com/hiteshmodha/goDevice.                       Vgo.string."github.com/hiteshmodha/goDevice"   ş2go.importpath.image/jpeg.             
-          ,go.string."image/jpeg"   şbgo.string.hdr."github.com/disintegration/imaging"             !          Zgo.string."github.com/disintegration/imaging"   şZgo.string."github.com/disintegration/imaging" P  Dgithub.com/disintegration/imaging  ş`go.importpath.github.com/disintegration/imaging.             !          Zgo.string."github.com/disintegration/imaging"   ş8go.string.hdr."database/sql"                       0go.string."database/sql"   ş0go.string."database/sql"    database/sql  ş6go.importpath.database/sql.                       0go.string."database/sql"   ş\go.string.hdr."github.com/go-sql-driver/mysql"                       Tgo.string."github.com/go-sql-driver/mysql"   şTgo.string."github.com/go-sql-driver/mysql" @  >github.com/go-sql-driver/mysql  şZgo.importpath.github.com/go-sql-driver/mysql.                       Tgo.string."github.com/go-sql-driver/mysql"   ş.type..hash.[8]stringÂ·f              (type..hash.[8]string   ş*type..eq.[8]stringÂ·f              $type..eq.[8]string   ş:type..hash.[4]interface {}Â·f              4type..hash.[4]interface {}   ş6type..eq.[4]interface {}Â·f              0type..eq.[4]interface {}   ş:type..hash.[1]interface {}Â·f              4type..hash.[1]interface {}   ş6type..eq.[1]interface {}Â·f              0type..eq.[1]interface {}   ş:type..hash.[5]interface {}Â·f              4type..hash.[5]interface {}   ş6type..eq.[5]interface {}Â·f              0type..eq.[5]interface {}   ş<type..hash.[11]interface {}Â·f              6type..hash.[11]interface {}   ş8type..eq.[11]interface {}Â·f              2type..eq.[11]interface {}   ş"runtime.zerovalue 0    ÿÿgo13ld 
+mime  ş&go.importpath.mime.                        go.string."mime"   ş2go.string.hdr."notjsbots"             	          *go.string."notjsbots"   ş*go.string."notjsbots"    notjsbots  ş0go.importpath.notjsbots.             	          *go.string."notjsbots"   ş2go.string.hdr."startones"             	          *go.string."startones"   ş*go.string."startones"    startones  ş0go.importpath.startones.             	          *go.string."startones"   ş0go.string.hdr."godevice"                       (go.string."godevice"   ş(go.string."godevice"    godevice  ş.go.importpath.godevice.                       (go.string."godevice"   ş2go.importpath.image/jpeg.             
+          ,go.string."image/jpeg"   şbgo.string.hdr."github.com/disintegration/imaging"             !          Zgo.string."github.com/disintegration/imaging"   şZgo.string."github.com/disintegration/imaging" P  Dgithub.com/disintegration/imaging  ş`go.importpath.github.com/disintegration/imaging.             !          Zgo.string."github.com/disintegration/imaging"   ş8go.string.hdr."database/sql"                       0go.string."database/sql"   ş0go.string."database/sql"    database/sql  ş6go.importpath.database/sql.                       0go.string."database/sql"   ş\go.string.hdr."github.com/go-sql-driver/mysql"                       Tgo.string."github.com/go-sql-driver/mysql"   şTgo.string."github.com/go-sql-driver/mysql" @  >github.com/go-sql-driver/mysql  şZgo.importpath.github.com/go-sql-driver/mysql.                       Tgo.string."github.com/go-sql-driver/mysql"   ş.type..hash.[8]stringÂ·f              (type..hash.[8]string   ş*type..eq.[8]stringÂ·f              $type..eq.[8]string   ş:type..hash.[4]interface {}Â·f              4type..hash.[4]interface {}   ş6type..eq.[4]interface {}Â·f              0type..eq.[4]interface {}   ş:type..hash.[1]interface {}Â·f              4type..hash.[1]interface {}   ş6type..eq.[1]interface {}Â·f              0type..eq.[1]interface {}   ş:type..hash.[5]interface {}Â·f              4type..hash.[5]interface {}   ş6type..eq.[5]interface {}Â·f              0type..eq.[5]interface {}   ş<type..hash.[11]interface {}Â·f              6type..hash.[11]interface {}   ş8type..eq.[11]interface {}Â·f              2type..eq.[11]interface {}   ş"runtime.zerovalue 0    ÿÿgo13ld
