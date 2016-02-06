@@ -33,7 +33,8 @@ func GetType(r *http.Request) string {
               strings.Contains(userAgent,"Roku") ||
               strings.Contains(userAgent,"DLNADOC"){
                 deviceType="TV"
-              }else if strings.Contains(userAgent,"Googlebot"){
+              }
+              if strings.Contains(userAgent,"Googlebot"){
               	 deviceType="Web"
               }
           return deviceType
