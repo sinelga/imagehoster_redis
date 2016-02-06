@@ -62,7 +62,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		}
 
 		deviceType := goDevice.GetType(r)
-		
+
 		if deviceType == "Mobile" {
 
 			golog.Info("Mobile")
@@ -114,12 +114,19 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 			//						fmt.Println("id_arr", len(id_arr))
 
 			golog.Info("id_arr " + strconv.Itoa(len(id_arr)))
-			
+
 			if len(id_arr) == 2 {
-				
-				golog.Info("path index.html?? "+path)
-				http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
-				
+
+				golog.Info("path index.html?? " + path)
+				if deviceType == "Mobile" {
+					http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
+
+				} else {
+
+					http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_23/dist/index.html")
+
+				}
+
 			} else if len(id_arr) > 2 {
 
 				character, exist := getOne.GetById(golog, rds, site, id_arr[1])
@@ -136,7 +143,15 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 					} else {
 
-						http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
+						if deviceType == "Mobile" {
+							http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
+
+						} else {
+
+							http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_23/dist/index.html")
+
+						}
+
 					}
 
 				} else {
