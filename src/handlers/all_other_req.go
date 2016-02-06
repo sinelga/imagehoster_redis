@@ -10,10 +10,10 @@ import (
 	"net/http"
 	"notjsbots"
 	"startones"
-		"strconv"
-//		"fmt"
-	"strings"
+	"strconv"
+	//		"fmt"
 	"github.com/hiteshmodha/goDevice"
+	"strings"
 )
 
 func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
@@ -62,18 +62,17 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 		}
 
 		deviceType := goDevice.GetType(r)
-
-	if deviceType == "Mobile" {
 		
-		golog.Info("Mobile")
-	} else if deviceType == "Web" {
-		golog.Info("Web")
-		
-	} else if deviceType == "Tab" {
-	
-		golog.Info("Tablet")
-	}
+		if deviceType == "Mobile" {
 
+			golog.Info("Mobile")
+		} else if deviceType == "Web" {
+			golog.Info("Web")
+
+		} else if deviceType == "Tab" {
+
+			golog.Info("Tablet")
+		}
 
 		if site == "localhost" {
 
@@ -112,9 +111,9 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			id_arr := strings.Split(path, "/")
 
-//						fmt.Println("id_arr", len(id_arr))
-						
-			golog.Info("id_arr "+strconv.Itoa(len(id_arr)))				
+			//						fmt.Println("id_arr", len(id_arr))
+
+			golog.Info("id_arr " + strconv.Itoa(len(id_arr)))
 
 			if len(id_arr) > 2 {
 
@@ -132,7 +131,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 					} else {
 
-						http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_"+variant+"/dist/index.html")
+						http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
 					}
 
 				} else {
@@ -141,10 +140,8 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				}
 
-
 			} else {
 
-	
 				characters, exist := getAll.GetAll(golog, rds, site)
 
 				if !exist {
