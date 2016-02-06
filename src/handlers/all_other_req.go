@@ -118,10 +118,11 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 			if len(id_arr) == 2 {
 
 				golog.Info("path index.html?? " + path)
-				character, _ := getOne.GetById(golog, rds, site, id_arr[1])
+//				character, _ := getOne.GetById(golog, rds, site, id_arr[1])
 
 				if notjsbot {
-					notjsbots.CreateNotJsPage(golog, c, w, r, variant, character, site)
+					characters, _:= getAll.GetAll(golog, rds, site)
+					notjsbots.CreateNotJsPageIndex(golog, c, w, r, variant, characters, site)
 
 				} else {
 
