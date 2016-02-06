@@ -232,5 +232,7 @@ bin/contents_feeder_redis --site=posliinipillu.fi && sleep 90 && bin/contents_fe
 bin/contents_feeder_redis --site=seksikertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=ilmaiset.seksikertomukset.fi && sleep 90 && bin/contents_feeder_redis --site=alaston.seksikertomukset.fi
 bin/contents_feeder_redis --site=tirkistely.fi && sleep 90 && bin/contents_feeder_redis --site=kuvia.tirkistely.fi && sleep 90 && bin/contents_feeder_redis --site=porno.tirkistely.fi
 bin/contents_feeder_redis --site=erotika.fi && sleep 90 && bin/contents_feeder_redis --site=live.erotika.fi && sleep 90 && bin/contents_feeder_redis --site=chatti.erotika.fi
-
 bin/contents_feeder_redis --site=rakasteluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=ilmaiset.rakasteluvideo.fi && sleep 90 && bin/contents_feeder_redis --site=teini.rakasteluvideo.fi
+
+#common49react accept other bots
+bin/contents_feeder_redis --site=pornokuva.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.pornokuva.fi && sleep 90 && bin/contents_feeder_redis --site=pano.pornokuva.fi
