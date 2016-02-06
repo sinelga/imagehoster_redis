@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     58852     `
-go object linux amd64 go1.5.1 X:none
-build id "cd4fe852c0d45833f0e26cb8938d81c4fdf99ee2"
+go object linux amd64 go1.5.3 X:none
+build id "d7a7d0844123819319afc3b27f0f049f5844ef35"
 
 $$
 package robots
@@ -431,7 +431,7 @@ package robots
 
 $$
 _go_.o          0           0     0     644     7629      `
-go object linux amd64 go1.5.1 X:none
+go object linux amd64 go1.5.3 X:none
 
 !
   go13ldbytes.alog/syslog.anet/http.astrings.a ş"".Generate  €  ødH‹%    HD$H;A†  Hìğ   H    H‰$è    H‹\$H‰œ$    H‹œ$    H¬$ø   H‰\$H‰l$H-    H‰,$è    H    H‰$è    H‹\$H‰œ$¨   HÇ$    H    H‰\$HÇD$   H‹œ$p  H‰\$H‹œ$x  H‰\$ è    H\$(H|$H‰ŞH‹H‰H‹NH‰OH‹œ$    H‰$è    H‹œ$p  H‰$H‹œ$x  H‰\$H    H‰\$HÇD$   è    H‹\$ H‰œ$À   H‹\$(H‰œ$È   H‹\$0H‰œ$Ğ   H‹œ$È   H‰\$PH‹\$PHƒû…|  H\$xH‰$H    H‰\$HÇD$'   H‹œ$p  H‰\$H‹œ$x  H‰\$ H    H‰\$(HÇD$0   è    H\$8H|$H‰ŞH‹H‰H‹NH‰OH‹œ$¨   H‰$è    H‹œ$`  H‰$H‹œ$X  Hƒû „Ù   H‹[ ÿÓH‹\$H‰œ$˜   H‹œ$˜   H‰$H    H‰\$HÇD$   H    H‰\$HÇD$ 

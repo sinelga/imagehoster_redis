@@ -13,6 +13,7 @@ import (
 		"strconv"
 //		"fmt"
 	"strings"
+	"github.com/hiteshmodha/goDevice"
 )
 
 func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
@@ -59,6 +60,20 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 			notjsbot = true
 		}
+
+		deviceType := goDevice.GetType(r)
+
+	if deviceType == "Mobile" {
+		
+		golog.Info("Mobile")
+	} else if deviceType == "Web" {
+		golog.Info("Web")
+		
+	} else if deviceType == "Tab" {
+	
+		golog.Info("Tablet")
+	}
+
 
 		if site == "localhost" {
 

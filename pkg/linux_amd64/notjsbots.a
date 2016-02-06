@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     60129     `
-go object linux amd64 go1.5.1 X:none
-build id "e037fdb57ff08d561f3074a043ffd85a824833cf"
+go object linux amd64 go1.5.3 X:none
+build id "c66dc6c441df7d9c81a0aa4de606c2a5079d4d37"
 
 $$
 package notjsbots
@@ -440,7 +440,7 @@ package notjsbots
 
 $$
  _go_.o          0           0     0     644     30529     `
-go object linux amd64 go1.5.1 X:none
+go object linux amd64 go1.5.3 X:none
 
 !
   go13lddomains.a8github.com/zenazn/goji/web.a

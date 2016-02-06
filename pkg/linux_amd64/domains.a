@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     10199     `
-go object linux amd64 go1.5.1 X:none
-build id "3dd718b6613a5f3d3dfb694ae15ac508ecb11070"
+go object linux amd64 go1.5.3 X:none
+build id "f53781e1b4920b23aef22b85f805d77326dfa3ad"
 
 $$
 package domains
@@ -87,7 +87,7 @@ package domains
 
 $$
  _go_.o          0           0     0     644     53183     `
-go object linux amd64 go1.5.1 X:none
+go object linux amd64 go1.5.3 X:none
 
 !
   go13ldencoding/xml.atime.a þ"".init     šdH‹%    H;av7Š    €û tŠ    €ûuÃè    Æ    è    è    Æ    Ãè    ë³

@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     12192     `
-go object linux amd64 go1.5.1 X:none
-build id "b8f3ed88da4ed5e073f495a824a39d3dafc3e8b1"
+go object linux amd64 go1.5.3 X:none
+build id "c68c81d3429b8dd36794756d11fd3a85b6780e40"
 
 $$
 package insert_local_redis
@@ -104,7 +104,7 @@ package insert_local_redis
 
 $$
 _go_.o          0           0     0     644     18080     `
-go object linux amd64 go1.5.1 X:none
+go object linux amd64 go1.5.3 X:none
 
 !
   go13lddomains.aencoding/json.aDgithub.com/garyburd/redigo/redis.alog/syslog.a ş$"".InsertCharacter   2  2dH‹%    H„$ğüÿÿH;A†j  Hì  H    H‰$è    H‹\$H‰œ$ˆ   H‹œ$ˆ   H¬$˜  H‰\$H‰l$H-    H‰,$è    ÆD$W H‹œ$  H‰œ$˜   H‹œ$   H‰œ$    H‹œ$  H‰œ$  H‹œ$  H‰œ$   H‹œ$˜   H‰œ$  H‹œ$    H‰œ$  H    H‰$è    H‹\$H‰\$xH‹\$xHƒû „‡  HÇ„$°     HÇ„$¸     H‰œ$¨  H    H‰$Hœ$  H‰\$HÇD$    è    H‹\$H‰œ$X  H‹\$ H‰œ$`  H‹œ$¨  H‹¬$X  H‰+H‹¬$`  €=     …è
