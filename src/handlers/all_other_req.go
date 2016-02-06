@@ -119,20 +119,20 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 				golog.Info("path index.html?? " + path)
 				character, _ := getOne.GetById(golog, rds, site, id_arr[1])
-				
-					if notjsbot {
-						notjsbots.CreateNotJsPage(golog, c, w, r, variant, character, site)
-						
-					} else {
-				
-				if deviceType == "Mobile" {
-					http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
+
+				if notjsbot {
+					notjsbots.CreateNotJsPage(golog, c, w, r, variant, character, site)
 
 				} else {
 
-					http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_23/dist/index.html")
+					if deviceType == "Mobile" {
+						http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
 
-				}
+					} else {
+
+						http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_mobile/version_23/dist/index.html")
+
+					}
 				}
 
 			} else if len(id_arr) > 2 {
