@@ -114,8 +114,13 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 			//						fmt.Println("id_arr", len(id_arr))
 
 			golog.Info("id_arr " + strconv.Itoa(len(id_arr)))
-
-			if len(id_arr) > 2 {
+			
+			if len(id_arr) == 2 {
+				
+				golog.Info("path index.html?? "+path)
+				http.ServeFile(w, r, "/home/juno/git/fi_FI_mobile_react/version_00/dist/index.html")
+				
+			} else if len(id_arr) > 2 {
 
 				character, exist := getOne.GetById(golog, rds, site, id_arr[1])
 
