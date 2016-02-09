@@ -155,7 +155,7 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 
 						} else {
 
-							http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_react/version_00/dist/index.htmll")
+							http.ServeFile(w, r, "/home/juno/git/fi_FI_desk_react/version_00/dist/index.html")
 
 						}
 
