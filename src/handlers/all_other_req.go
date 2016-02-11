@@ -162,7 +162,8 @@ func Elaborate(c web.C, w http.ResponseWriter, r *http.Request) {
 					}
 
 				} else {
-
+					
+					golog.Info("not exist")
 					http.NotFound(w, r)
 
 				}
