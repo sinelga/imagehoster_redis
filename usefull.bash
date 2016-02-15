@@ -236,3 +236,5 @@ bin/contents_feeder_redis --site=rakasteluvideo.fi && sleep 90 && bin/contents_f
 
 #common49react accept other bots
 bin/contents_feeder_redis --site=pornokuva.fi && sleep 90 && bin/contents_feeder_redis --site=seksi.pornokuva.fi && sleep 90 && bin/contents_feeder_redis --site=pano.pornokuva.fi
+
+bin/contents_feeder_redis --site=pikkarit.fi && sleep 90 && bin/contents_feeder_redis --site=naisten.pikkarit.fi && sleep 90 && bin/contents_feeder_redis --site=sexi.pikkarit.fi
