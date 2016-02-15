@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     60129     `
 go object linux amd64 go1.5.3 X:none
-build id "c66dc6c441df7d9c81a0aa4de606c2a5079d4d37"
+build id "532dae993138b772d74d75bb367ef2104d1844c6"
 
 $$
 package notjsbots

@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     58228     `
 go object linux amd64 go1.5.3 X:none
-build id "cb0dc536625acb8d395cc7a602535e653a29c154"
+build id "8281c2643d26e5780322f58977c079d8b1c8a910"
 
 $$
 package handlers
