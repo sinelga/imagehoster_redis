@@ -240,5 +240,6 @@ bin/contents_feeder_redis --site=pikkarit.fi && sleep 90 && bin/contents_feeder_
 bin/contents_feeder_redis --site=pillunkuvat.fi && sleep 90 && bin/contents_feeder_redis --site=porn.pillunkuvat.fi && sleep 90 && bin/contents_feeder_redis --site=tube.pillunkuvat.fi
 bin/contents_feeder_redis --site=nussivat.fi && sleep 90 && bin/contents_feeder_redis --site=www.nussivat.fi && sleep 90 && bin/contents_feeder_redis --site=chat.nussivat.fi
 bin/contents_feeder_redis --site=ilmaispornoa.fi && sleep 90 && bin/contents_feeder_redis --site=kuvia.ilmaispornoa.fi && sleep 90 && bin/contents_feeder_redis --site=pillut.ilmaispornoa.fi
-
 bin/contents_feeder_redis --site=pornotarina.fi && sleep 90 && bin/contents_feeder_redis --site=ilmaista.pornotarina.fi && sleep 90 && bin/contents_feeder_redis --site=ilmainen.pornotarina.fi
+
+bin/contents_feeder_redis --site=rakasteluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=tieni.rakasteluvideot.fi && sleep 90 && bin/contents_feeder_redis --site=fb.rakasteluvideot.fi
