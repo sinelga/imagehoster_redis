@@ -23,7 +23,6 @@ func main() {
 		AllowedOrigins: []string{"*"},
 	})
 	goji.Use(c.Handler)
-
 	goji.Get("/api", handlers.MhandleAll)
 	goji.Get("/api/:id", handlers.MhandleAll)
 	goji.Get("/img/:id/:imgfile/:width/:height", handlers.ImageShow)

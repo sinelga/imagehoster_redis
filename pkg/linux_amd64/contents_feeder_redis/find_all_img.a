@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     26896     `
 go object linux amd64 go1.5.3 X:none
-build id "370f993fc04f9977d1bce4b6a6933ba171c422d6"
+build id "c5c347c49745124fbc8252cac7373abf39baeb82"
 
 $$
 package find_all_img
@@ -209,7 +209,7 @@ package find_all_img
 	var @"database/sql".ErrTxDone error
 
 $$
-_go_.o          0           0     0     644     62547     `
+_go_.o          0           0     0     644     62564     `
 go object linux amd64 go1.5.3 X:none
 
 !
@@ -320,23 +320,23 @@ go object linux amd64 go1.5.3 X:none
   $runtime.panicindex   Ø
   $runtime.panicindex   ô
   $runtime.panicindex    
-  0runtime.morestack_noctxt   °   "".autotmp_0055 ¿type.[10]string "".autotmp_0053 ÿ type.*[10]string "".autotmp_0052 Ÿ	type.int "".autotmp_0051 	type.int "".description ïtype.string "".s Ïtype.[]string "".paragraph ,type.domains.Paragraph "".i ¯	type.int "".themes type.string "".locale ğtype.string "".c ĞTtype.github.com/garyburd/redigo/redis.Conn "".golog ,type.log/syslog.Writer "".characters  &type.*"".Characters " îŸ    Jê1S‡ùZ}-F " èŸ{ş@à TgclocalsÂ·074acc76fb2fbe0fb980e7b81941daab TgclocalsÂ·8944d23967b5250b4722f61b1f9cb60b   ®/home/juno/git/imagehoster_redis/src/contents_feeder_redis/find_all_img/find_all_img.goşL"".(*Characters).Create_local_charters  À  ¬dH‹%    H„$(şÿÿH;A†ñ  HìX  H    H‰$è    H‹\$H‰œ$P  H‹œ$P  H¬$h  H‰\$H‰l$H-    H‰,$è    H    H‰$HÇD$   H    H‰\$HÇD$   è    H‹\$ H‰œ$h  H‹\$(H‰œ$p  H‹\$0H‰œ$X  H‹\$8H‰œ$`  H‹œ$X  Hƒû tiH‹œ$`  H‰$H‹œ$X  Hƒû „  H‹[ ÿÓH‹\$H‰œ$x  H‹\$H‰œ$€  H‹œ$P  H‰$H‹œ$x  H‰\$H‹œ$€  H‰\$è    H‹œ$p  H‰\$H‹œ$h  Hƒû „  H[ Ç$   H‰ØH‰D$è    ƒø …n  HÇ„$H      H‹œ$`  Hƒû „I  H‹kH‰¬$@  H‹œ$H  H‹¬$@  H9ë  H‹œ$H  H‰œ$8  H‹œ$`  Hƒû „û   H‹+H‰¬$ˆ  H‹kH‰¬$  H‹kH‰¬$˜  H‹´$ˆ  H‹œ$8  H‹¬$  H9ëƒ°   HiÛ¸   HŞH¼$   è    H‹´$P  H‰çè    H‹œ$h  H‰\$`H‹œ$p  H‰\$hH‹œ$È  H‰\$pH‹œ$Ğ  H‰\$xH´$   H¼$€   è    è    H‹œ$H  HƒÃH‰œ$H  H‹œ$H  H‹¬$@  H9ëŒøşÿÿè    HÄX  Ãè    ‰éşşÿÿ‰é°şÿÿè    HÄX  Ã‰é\şÿÿ‰éëıÿÿè    éêüÿÿ&
+  0runtime.morestack_noctxt   °   "".autotmp_0055 ¿type.[10]string "".autotmp_0053 ÿ type.*[10]string "".autotmp_0052 Ÿ	type.int "".autotmp_0051 	type.int "".description ïtype.string "".s Ïtype.[]string "".paragraph ,type.domains.Paragraph "".i ¯	type.int "".themes type.string "".locale ğtype.string "".c ĞTtype.github.com/garyburd/redigo/redis.Conn "".golog ,type.log/syslog.Writer "".characters  &type.*"".Characters " îŸ    Jê1S‡ùZ}-F " èŸ{ş@à TgclocalsÂ·074acc76fb2fbe0fb980e7b81941daab TgclocalsÂ·8944d23967b5250b4722f61b1f9cb60b   ®/home/juno/git/imagehoster_redis/src/contents_feeder_redis/find_all_img/find_all_img.goşL"".(*Characters).Create_local_charters  à  ÎdH‹%    H„$(şÿÿH;A†  HìX  H    H‰$è    H‹\$H‰œ$P  H‹œ$P  H¬$h  H‰\$H‰l$H-    H‰,$è    H    H‰$HÇD$   H    H‰\$HÇD$   1ÛH‰\$ H‰\$(H‰\$0è    H‹\$8H‰œ$h  H‹\$@H‰œ$p  H‹\$HH‰œ$X  H‹\$PH‰œ$`  H‹œ$X  Hƒû tiH‹œ$`  H‰$H‹œ$X  Hƒû „  H‹[ ÿÓH‹\$H‰œ$x  H‹\$H‰œ$€  H‹œ$P  H‰$H‹œ$x  H‰\$H‹œ$€  H‰\$è    H‹œ$p  H‰\$H‹œ$h  Hƒû „  H[ Ç$   H‰ØH‰D$è    ƒø …n  HÇ„$H      H‹œ$`  Hƒû „I  H‹kH‰¬$@  H‹œ$H  H‹¬$@  H9ë  H‹œ$H  H‰œ$8  H‹œ$`  Hƒû „û   H‹+H‰¬$ˆ  H‹kH‰¬$  H‹kH‰¬$˜  H‹´$ˆ  H‹œ$8  H‹¬$  H9ëƒ°   HiÛ¸   HŞH¼$   è    H‹´$P  H‰çè    H‹œ$h  H‰\$`H‹œ$p  H‰\$hH‹œ$È  H‰\$pH‹œ$Ğ  H‰\$xH´$   H¼$€   è    è    H‹œ$H  HƒÃH‰œ$H  H‹œ$H  H‹¬$@  H9ëŒøşÿÿè    HÄX  Ãè    ‰éşşÿÿ‰é°şÿÿè    HÄX  Ã‰é\şÿÿ‰éëıÿÿè    éÙüÿÿ&
       J  ,type.log/syslog.Writer   \
   "runtime.newobject   ¸  ,type.log/syslog.Writer   Ê
-  (runtime.typedmemmove   Ø  go.string."tcp"   €  "go.string.":6379"   ¦
-  Jgithub.com/garyburd/redigo/redis.Dial   ö       ü
-  2log/syslog.(*Writer).Crit   ê
-  "runtime.deferproc   ü
-ü  runtime.duffcopy   œ	
-°  runtime.duffcopy   ®
+  (runtime.typedmemmove   Ø  go.string."tcp"   €  "go.string.":6379"   È
+  Jgithub.com/garyburd/redigo/redis.Dial   ˜       
+  2log/syslog.(*Writer).Crit   Œ
+  "runtime.deferproc   	
+ü  runtime.duffcopy   ¾	
+°  runtime.duffcopy   Ğ
 
-ü  runtime.duffcopy   ¸
+ü  runtime.duffcopy   Ú
 
-  pcontents_feeder_redis/insert_local_redis.InsertCharacter   
-  &runtime.deferreturn   ¸
-  $runtime.panicindex   ä
-  &runtime.deferreturn   š
-  0runtime.morestack_noctxt   ğ°	  "".autotmp_0069 ¯type.int "".autotmp_0068 Ÿtype.int "".autotmp_0067 ¿type.string "".&golog .type.*log/syslog.Writer "".character ï6type.domains.CharacterRedis "".i ¿type.int "".err ÿtype.error "".c ßTtype.github.com/garyburd/redigo/redis.Conn "".site Ğtype.string "".characters  &type.*"".Characters &"°	¸¯	°	"¯	°	"   @Šibi@Sm^-	  -7—ÒS TgclocalsÂ·180b1485e491a5c10e572898954b399e TgclocalsÂ·d6719574676f6db954def3eb2f9ba851   ®/home/juno/git/imagehoster_redis/src/contents_feeder_redis/find_all_img/find_all_img.goş"".init     dH‹%    H;avnŠ    €û tŠ    €ûuÃè    Æ    è    è    è    è    è    è    è    è    è    è    è    è    è    Æ    Ãè    éyÿÿÿ(
+  pcontents_feeder_redis/insert_local_redis.InsertCharacter   À
+  &runtime.deferreturn   Ú
+  $runtime.panicindex   †
+  &runtime.deferreturn   ¼
+  0runtime.morestack_noctxt   ğ°	  "".autotmp_0069 ¯type.int "".autotmp_0068 Ÿtype.int "".autotmp_0067 ¿type.string "".&golog .type.*log/syslog.Writer "".character ï6type.domains.CharacterRedis "".i ¿type.int "".err ÿtype.error "".c ßTtype.github.com/garyburd/redigo/redis.Conn "".site Ğtype.string "".characters  &type.*"".Characters &"°	É¯	°	"¯	°	! ° @Šisi@Sm^-	  -7¨ÒR TgclocalsÂ·180b1485e491a5c10e572898954b399e TgclocalsÂ·d6719574676f6db954def3eb2f9ba851   ®/home/juno/git/imagehoster_redis/src/contents_feeder_redis/find_all_img/find_all_img.goş"".init     dH‹%    H;avnŠ    €û tŠ    €ûuÃè    Æ    è    è    è    è    è    è    è    è    è    è    è    è    è    Æ    Ãè    éyÿÿÿ(
       "  "".initdoneÂ·   8  "".initdoneÂ·   N
   "runtime.throwinit   ^ "".initdoneÂ·   j
   domains.init   t
@@ -393,4 +393,4 @@ keys  ş,go.string.hdr."values"                       $go.string."values"  
 time  ş&go.importpath.time.                        go.string."time"   şngo.string.hdr."contents_feeder_redis/findfreeparagraph"             '          fgo.string."contents_feeder_redis/findfreeparagraph"   şfgo.string."contents_feeder_redis/findfreeparagraph" P  Pcontents_feeder_redis/findfreeparagraph  şlgo.importpath.contents_feeder_redis/findfreeparagraph.             '          fgo.string."contents_feeder_redis/findfreeparagraph"   ş`go.string.hdr."github.com/garyburd/redigo/redis"                        Xgo.string."github.com/garyburd/redigo/redis"   şXgo.string."github.com/garyburd/redigo/redis" P  Bgithub.com/garyburd/redigo/redis  ş^go.importpath.github.com/garyburd/redigo/redis.                        Xgo.string."github.com/garyburd/redigo/redis"   ş4go.string.hdr."log/syslog"             
           ,go.string."log/syslog"   ş,go.string."log/syslog"    log/syslog  ş2go.importpath.log/syslog.             
           ,go.string."log/syslog"   şpgo.string.hdr."contents_feeder_redis/insert_local_redis"             (          hgo.string."contents_feeder_redis/insert_local_redis"   şhgo.string."contents_feeder_redis/insert_local_redis" `  Rcontents_feeder_redis/insert_local_redis  şngo.importpath.contents_feeder_redis/insert_local_redis.             (          hgo.string."contents_feeder_redis/insert_local_redis"   ş8go.string.hdr."database/sql"                       0go.string."database/sql"   ş0go.string."database/sql"    database/sql  ş6go.importpath.database/sql.                       0go.string."database/sql"   ş.go.string.hdr."strconv"                       &go.string."strconv"   ş&go.string."strconv"   strconv  ş,go.importpath.strconv.                       &go.string."strconv"   ş.go.string.hdr."strings"                       &go.string."strings"   ş&go.string."strings"   strings  ş,go.importpath.strings.                       &go.string."strings"   ş$go.string.hdr."os"                       go.string."os"   şgo.string."os"   os  ş"go.importpath.os.                       go.string."os"   ş2go.string.hdr."math/rand"             	          *go.string."math/rand"   ş*go.string."math/rand"    math/rand  ş0go.importpath.math/rand.             	          *go.string."math/rand"   ş(go.string.hdr."path"                        go.string."path"   ş go.string."path"   
-path  ş&go.importpath.path.                        go.string."path"   ş:go.string.hdr."path/filepath"                       2go.string."path/filepath"   ş2go.string."path/filepath"    path/filepath  ş8go.importpath.path/filepath.                       2go.string."path/filepath"   ş.type..hash.[2]stringÂ·f              (type..hash.[2]string   ş*type..eq.[2]stringÂ·f              $type..eq.[2]string   ş.type..hash.[8]stringÂ·f              (type..hash.[8]string   ş*type..eq.[8]stringÂ·f              $type..eq.[8]string   ş:type..hash.[2]interface {}Â·f              4type..hash.[2]interface {}   ş6type..eq.[2]interface {}Â·f              0type..eq.[2]interface {}   ş0type..hash.[10]stringÂ·f              *type..hash.[10]string   ş,type..eq.[10]stringÂ·f              &type..eq.[10]string   ş"runtime.zerovalue      ÿÿgo13ld 
+path  ş&go.importpath.path.                        go.string."path"   ş:go.string.hdr."path/filepath"                       2go.string."path/filepath"   ş2go.string."path/filepath"    path/filepath  ş8go.importpath.path/filepath.                       2go.string."path/filepath"   ş.type..hash.[2]stringÂ·f              (type..hash.[2]string   ş*type..eq.[2]stringÂ·f              $type..eq.[2]string   ş.type..hash.[8]stringÂ·f              (type..hash.[8]string   ş*type..eq.[8]stringÂ·f              $type..eq.[8]string   ş:type..hash.[2]interface {}Â·f              4type..hash.[2]interface {}   ş6type..eq.[2]interface {}Â·f              0type..eq.[2]interface {}   ş0type..hash.[10]stringÂ·f              *type..hash.[10]string   ş,type..eq.[10]stringÂ·f              &type..eq.[10]string   ş"runtime.zerovalue      ÿÿgo13ld

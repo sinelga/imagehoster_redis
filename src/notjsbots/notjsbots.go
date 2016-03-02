@@ -13,7 +13,7 @@ import (
 
 func CreateNotJsPage(golog syslog.Writer, c web.C, w http.ResponseWriter, r *http.Request, variant string, character domains.Character,site string) {
 
-	golog.Info("CreateNotJsPage msnbot!!! " + character.Name)
+//	golog.Info("CreateNotJsPage msnbot!!! " + character.Name)
 	
 	check := func(err error) {
 		if err != nil {

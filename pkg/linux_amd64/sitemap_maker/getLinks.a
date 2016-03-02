@@ -1,7 +1,7 @@
 !<arch>
 __.PKGDEF       0           0     0     644     12167     `
 go object linux amd64 go1.5.3 X:none
-build id "a670fb5b01de48701fba572b9b9592c43a4d8851"
+build id "09312d927bb3e1ff8bcbb2efcb3cc60aafbbdc16"
 
 $$
 package getLinks
